@@ -3,7 +3,7 @@
  *
  * A part of C17 standard, 7.4.1.10
  *
- * Checks that symbol is a standard wite-space character
+ * Checks that symbol is a standard white-space character
  *
  */
 

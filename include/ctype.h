@@ -1,9 +1,9 @@
 /*
  * ctype.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4
  *
- * Операции над символами
+ * Character handling
  *
  */
 
@@ -11,72 +11,80 @@
 #define _CTYPE_H 1
 
 /*
- * Проверяет, является ли символ буквой или цифрой
+ * Character classification functions, 7.4.1
+ */
+
+/*
+ * Checks that symbol is letter or digit
  */
 int isalnum(int c);
 
 /*
- * Проверяет, является ли символ буквой
+ * Checks that symbol is letter
  */
 int isalpha(int c);
 
 /*
- * Проверяет, является ли символ цифрой
+ * Checks that symbol is decimal digit
  */
 int isdigit(int c);
 
 /*
- * Проверяет, является ли символ пробельным
+ * Checks that symbol is space or tab
  */
 int isblank(int c);
 
 /*
- * Проверяет, является ли символ управляющим
+ * Checks that symbol is control character
  */
 int iscntrl(int c);
 
 /*
- * Проверяет, является ли символ отображаемым
+ * Checks that symbol is printing character (excluding space)
  */
 int isgraph(int c);
 
 /*
- * Проверяет, является ли символ буквой нижнего регистра
+ * Checks that symbol is lower-case letter
  */
 int islower(int c);
 
 /*
- * Проверяет, является ли символ буквой верхнего регистра
- */
-int isupper(int c);
-
-/*
- * Проверяет, является ли символ отображаемым
+ * Checks that symbol is printing character (including space)
  */
 int isprint(int c);
 
 /*
- * Проверяет, является ли символ пунктуационным
+ * Checks that symbol is punctuation character
  */
 int ispunct(int c);
 
 /*
- * Проверяет, является ли символ пробельным
+ * Checks that symbol is a standard white-space character
  */
 int isspace(int c);
 
 /*
- * Проверяет, является ли символ шестнадцатиричной цифрой
+ * Checks that symbol is an upper-case letter
+ */
+int isupper(int c);
+
+/*
+ * Checks that symbol is a hexadecimal digit
  */
 int isxdigit(int c);
 
 /*
- * Преобразует символ в нижний регистр
+ * Character case mapping functions, 7.4.2
+ */
+
+/*
+ * Converts an upper-case letter to lower case
  */
 int tolower(int c);
 
 /*
- * Преобразует символ в верхний регистр
+ * Converts a lower-case letter to upper case
  */
 int toupper(int c);
 
