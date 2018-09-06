@@ -1,9 +1,9 @@
 /*
  * isspace.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.10
  *
- * Функция проверяет, является ли символ пробельным
+ * Checks that symbol is a standard wite-space character
  *
  */
 

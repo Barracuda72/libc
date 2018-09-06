@@ -1,9 +1,9 @@
 /*
  * isupper.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.11
  *
- * Функция проверяет, является ли символ буквой верхнего регистра
+ * Checks that symbol is an upper-case letter
  *
  */
 

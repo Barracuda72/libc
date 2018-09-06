@@ -1,9 +1,9 @@
 /*
  * isprint.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.8
  *
- * Функция проверяет, является ли символ печатаемым
+ * Checks that symbol is a printing character (including space)
  *
  */
 

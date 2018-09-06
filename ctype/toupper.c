@@ -1,9 +1,9 @@
 /*
  * toupper.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.2.2
  *
- * Функция преобразует символ в верхний регистр
+ * Converts a lower-case letter to upper case
  *
  */
 

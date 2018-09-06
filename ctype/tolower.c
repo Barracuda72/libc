@@ -1,9 +1,9 @@
 /*
  * tolower.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.2.1
  *
- * Функция преобразует символ в нижний регистр
+ * Converts an upper-case letter to lower case
  *
  */
 

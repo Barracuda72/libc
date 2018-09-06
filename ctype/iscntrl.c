@@ -1,9 +1,9 @@
 /*
  * iscntrl.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.4
  *
- * Функция проверяет, является ли символ управляющим
+ * Checks that symbol is control character
  *
  */
 

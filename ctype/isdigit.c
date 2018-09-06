@@ -1,9 +1,9 @@
 /*
  * isdigit.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.5
  *
- * Функция проверяет, является ли символ цифрой
+ * Checks that symbol is a decimal digit
  *
  */
 

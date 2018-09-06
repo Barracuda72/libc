@@ -1,9 +1,9 @@
 /*
  * isgraph.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.6
  *
- * Функция проверяет, является ли символ отображаемым
+ * Checks that symbol is a printing character (excluding space)
  *
  */
 

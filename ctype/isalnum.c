@@ -1,9 +1,9 @@
 /*
  * isalnum.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.1
  *
- * Функция проверяет, является ли символ буквой или цифрой
+ * Checks that symbol is letter or digit
  *
  */
 

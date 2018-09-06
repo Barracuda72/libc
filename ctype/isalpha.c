@@ -1,9 +1,9 @@
 /*
  * isalpha.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.2
  *
- * Функция проверяет, является ли символ буквой
+ * Checks that symbol is letter
  *
  */
 

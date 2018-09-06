@@ -1,9 +1,9 @@
 /*
  * islower.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.4.1.7
  *
- * Функция проверяет, является ли символ буквой нижнего регистра
+ * Checks that symbol is lower-case letter
  *
  */
 
