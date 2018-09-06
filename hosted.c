@@ -1,7 +1,7 @@
 /*
  * hosted.c
  *
- * Недостающие функции ядра для hosted-режима
+ * Missing kernel functions for hosted mode
  *
  */
 
@@ -31,7 +31,7 @@ void *kmalloc(size_t size)
 
 void kfree(void *p)
 {
-  // Ничего не делаем
+  // Do nothing
 }
 
 void ktty_puts(const char *s)

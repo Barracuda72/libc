@@ -1,7 +1,7 @@
 /*
  * environ.c
  *
- * Массив переменных окружения
+ * Array of environment variables
  */
 
 #include <stdint.h>

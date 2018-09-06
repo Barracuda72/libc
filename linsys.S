@@ -1,14 +1,13 @@
 /*
  * linsys.S
  *
- * Обертка системных вызовов Linux 
- * для hosted-режима
+ * Linux syscalls wrapper for hosted mode
  *
  */
 
 #include "/usr/include/asm/unistd_64.h"
 
-// Общий макрос описания системного вызова
+// Generic syscall definition macro
 #define SYSCALL(name, num) \
   .globl #name; \
   ##name: ; \

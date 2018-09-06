@@ -3,31 +3,31 @@
 .global _start
 .type _start, @function
 _start:
-  # Установим конец связного списка кадров стека
+  # Set the stack frames linked list end
   movq $0, %rbp
   pushq %rbp # rip=0
   pushq %rbp # rbp=0
   movq %rsp, %rbp
  
-  # Прибережем для main
+  # Save argc and argv for later use by main
   pushq %rsi
   pushq %rdi
  
-  # Иницализируем сигналы, менеджер памяти, стандартный ввод/вывод и прочее
+  # Initialize signals, memory allocator, standard I/O etc.
   #call initialize_standard_library
  
-  # Выполним глобальные конструкторы
+  # Call global constructors
   #call _init
  
-  # Восстановим argc и argv.
+  # Restore argc and argv
   popq %rdi
   popq %rsi
  
-  # Вызовем main
+  # Execute main function
   call main
   #call *(main@GOT)
  
-  # Завершим процесс
+  # End process
   mov %rax, %rdi
   # call exit
 loop:

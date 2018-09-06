@@ -1,7 +1,7 @@
 /*
  * tls.c
  *
- * Интерфейс пользователя к Thread-Local Storage
+ * User-level interface to Thread-Local Storage
  */
 
 #include <errno.h>

@@ -1,7 +1,7 @@
 /*
  * os64sys.h
  *
- * Системные вызовы, интерфейс уровня пользователя
+ * User-level syscalls interface
  */
 
 #ifndef __OS64SYS_H__
@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include <stddef.h>
 
-// Украдено у JamesM и переработано
+// Stolen from JamesM and adjusted
 
 #define DECL_SYSCALL0(fn) int syscall_##fn();
 #define DECL_SYSCALL1(fn,p1) int syscall_##fn(p1);
