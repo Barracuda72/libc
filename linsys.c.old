@@ -1,0 +1,194 @@
+/*
+ * linsys.c
+ *
+ * Обертка системных вызовов Linux 
+ * для hosted-режима
+ *
+ */
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+*/
+
+#include <stdint.h>
+
+//#include <fcntl.h>
+
+ssize_t write(int fd, const void *buf, size_t count)
+{
+  ssize_t nfd = fd;
+  ssize_t written = 0;
+
+  asm volatile("\
+    mov $1, %%rax\n\
+    mov %1, %%rdi\n\
+    mov %2, %%rsi\n\
+    mov %3, %%rdx\n\
+    # int $0x80\n\
+    syscall\n\
+    mov %%rax, %0\n\
+    ":"=r"(written)
+     :"m"(fd),
+      "m"(buf),
+      "m"(count)
+     :"rax","rbx","rcx","rdx"
+    );
+
+    return written;
+}
+
+ssize_t read(int fd, void *buf, size_t count)
+{
+  ssize_t nfd = fd;
+  ssize_t readed = 0;
+
+  asm volatile("\
+    mov $0, %%rax\n\
+    mov %1, %%rdi\n\
+    mov %2, %%rsi\n\
+    mov %3, %%rdx\n\
+    # int $0x80\n\
+    syscall\n\
+    mov %%rax, %0\n\
+    ":"=r"(readed)
+     :"m"(fd),
+      "m"(buf),
+      "m"(count)
+     :"rax","rbx","rcx","rdx"
+    );
+
+    return readed;
+}
+
+int open(const char *pathname, int flags)
+{
+  size_t fd;
+  size_t nflags = flags;
+  asm volatile("\
+    mov $2, %%rax\n\
+    mov %1, %%rdi\n\
+    mov %2, %%rsi\n\
+    # int $0x80\n\
+    syscall\n\
+    mov %%rax, %0\n\
+    ":"=r"(fd)
+     :"m"(pathname),
+      "m"(flags)
+     :"rax","rbx","rcx"
+  );
+  return fd;
+}
+
+int close(int fd)
+{
+  size_t nfd = fd;
+  size_t ret;
+  asm volatile("\
+    mov $3, %%rax\n\
+    mov %1, %%rdi\n\
+    # int $0x80\n\
+    syscall\n\
+    mov %%rax, %0\n\
+    ":"=r"(ret)
+     :"m"(fd)
+     :"rax","rbx"
+  );
+  return ret;
+}
+
+off_t lseek(int fd, off_t offset, int whence)
+{
+  size_t nfd = fd;
+  size_t nwhence = whence;
+  off_t pos;
+
+  asm volatile("\
+    mov $8, %%rax\n\
+    mov %1, %%rdi\n\
+    mov %2, %%rsi\n\
+    mov %3, %%rdx\n\
+    # int $0x80\n\
+    syscall\n\
+    mov %%rax, %0\n\
+    ":"=r"(pos)
+     :"m"(fd),"m"(offset),"m"(whence)
+     :"rax","rbx","rcx","rdx"
+  );
+
+  return pos;
+}
+
+void exit(int code)
+{
+  size_t ncode = code;
+
+  asm volatile("\
+    mov $60, %%rax\n\
+    mov %0, %%rdi\n\
+    # int $0x80\n\
+    syscall\n\
+    ":
+     :"m"(code)
+     :"rax","rbx"
+   );
+
+   for(;;);
+}
+
+void *mremap(void *old_address, size_t old_size,
+                    size_t new_size, int flags, void *new_address)
+{
+  ssize_t nflags = flags;
+  ssize_t newaddr = 0;
+
+  asm volatile("\
+    mov $25, %%rax\n\
+    mov %1, %%rdi\n\
+    mov %2, %%rsi\n\
+    mov %3, %%rdx\n\
+    mov %4, %%rcx\n\
+    mov %5, %%r8\n\
+    # int $0x80\n\
+    syscall\n\
+    mov %%rax, %0\n\
+    ":"=r"(newaddr)
+     :"m"(old_address),
+      "m"(old_size),
+      "m"(new_size),
+      "r"(nflags),
+      "m"(new_address)
+     :"rax","rcx","rdx","rsi","rdi","r8"
+    );
+
+    return newaddr;
+}
+
+void *sbrk(int len)
+{
+  ssize_t newaddr = 0;
+  asm volatile("\
+    mov $12, %%rax\n\
+    xor %%rdi, %%rdi\n\
+    # int $0x80\n\
+    syscall\n\
+    push %%rax\n\
+    mov %1, %%edi\n\
+    add %%rax, %%rdi\n\
+    mov $12, %%rax\n\
+    # int $0x80\n\
+    syscall\n\
+    pop %%rax\n\
+    mov %%rax, %0\n\
+    ":"=r"(newaddr)
+     :"r"(len)
+     :"rax","rbx"
+  );
+
+  return newaddr;
+}
+

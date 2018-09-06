@@ -1,2 +1,2 @@
-# libc
-Tiny C library conforming to C2011 standard
+Feature-incomplete implementation of C Standard Library.
+Tries to be compatible with latest (C 2011) standart.
