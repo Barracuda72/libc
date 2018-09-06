@@ -1,7 +1,7 @@
 /*
  * math.h
  *
- * Часть стандарта C2011
+ * A part of C17 standard
  *
  */
 
