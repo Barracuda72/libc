@@ -1,15 +1,15 @@
 /*
  * strftime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.3.5
  *
- * Функция преобразует дату в соответствии с заданным форматом
+ * Builds string representation of date according to format
  *
  */
 
 #include <time.h>
 
-// TODO: реализовать!
+// TODO: implement!
 
 size_t strftime(char * restrict s, size_t maxsize,
                 const char * restrict format,

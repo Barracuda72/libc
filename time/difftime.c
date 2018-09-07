@@ -1,15 +1,15 @@
 /*
  * difftime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.2.2
  *
- * Функция вычисляет разность между двумя календарными временами
+ * Computes the difference between two calendar times
  *
  */
 
 #include <time.h>
 
-// TODO: реализовать!
+// TODO: implement!
 
 // double difftime(time_t time1, time_t time0)
 time_t difftime(time_t time1, time_t time0)

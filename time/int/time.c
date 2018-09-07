@@ -1,9 +1,9 @@
 /*
  * int/time.c
  *
- * Внутренние процедуры
+ * Internal functions
  *
- * Функции для работы с датой и временем
+ * Date and time processing functions
  *
  */
 
@@ -11,7 +11,7 @@
 #include <int/time.h>
 
 /*
- * Возвращает 1, если год високосный, иначе 0
+ * Determines if the year is leap
  */
 int int_time_isleap(int year)
 {
@@ -19,35 +19,35 @@ int int_time_isleap(int year)
 }
 
 /*
- * Возвращает количество дней в месяце
+ * Returns the number of days in month
  */
 int int_time_days_in_month(int mon, int year)
 {
   switch (mon)
   {
-    case  0: /* Январь */
-    case  2: /* Март */
-    case  4: /* Май */
-    case  6: /* Июль */
-    case  7: /* Август */
-    case  9: /* Октябрь */
-    case 11: /* Декабрь */
+    case  0: /* January */
+    case  2: /* March */
+    case  4: /* May */
+    case  6: /* July */
+    case  7: /* August */
+    case  9: /* October */
+    case 11: /* December */
       return 31;
 
-    case  1: /* Февраль */
+    case  1: /* February */
       return 28 + int_time_isleap(year);
 
-    case  3: /* Апрель */
-    case  5: /* Июнь */
-    case  8: /* Сентябрь */
-    case 10: /* Ноябрь */
-    default: /* Пес его знает */
+    case  3: /* April */
+    case  5: /* June */
+    case  8: /* September */
+    case 10: /* November */
+    default: /* Unknownember */
       return 30;
   }
 }
 
 /*
- * Возвращает количество дней с начала года до текущего месяца
+ * Returns the number of days from start of the year up to current month
  */
 int int_time_days_upto_month(int mon, int year)
 {
@@ -62,7 +62,7 @@ int int_time_days_upto_month(int mon, int year)
 }
 
 /*
- * Возвращает количество дней с начала эпохи (1970) до текущего года
+ * Returns the number of days since epoch (1970) up to current year
  */
 int int_time_days_upto_year(int year)
 {

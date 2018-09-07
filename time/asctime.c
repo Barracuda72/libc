@@ -1,14 +1,13 @@
 /*
  * asctime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.3.1
  *
- * Функция преобразует значения структуры tm для составления текстового
- * описания даты и времени
+ * Builds text representation of time from fields of tm structure
  *
  */
 
-#include <stdio.h> // Для snprintf
+#include <stdio.h> // For snprintf
 #include <time.h>
 
 static const char wday_name[7][3] = {

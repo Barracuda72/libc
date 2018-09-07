@@ -1,15 +1,15 @@
 /*
  * clock.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.2.1
  *
- * Функция возвращает использованное процессорное время
+ * Returns processor time used
  *
  */
 
 #include <time.h>
 
-// TODO: реализовать!
+// TODO: implement!
 
 clock_t clock(void)
 {

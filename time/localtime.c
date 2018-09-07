@@ -1,10 +1,9 @@
 /*
  * localtime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.3.4
  *
- * Функция преобразует локальное календарное время, на которое указывает 
- * timer, в значения структуры tm
+ * Fills tm structure fields (as localtime) from time_t
  *
  */
 
@@ -12,7 +11,7 @@
 
 static struct tm localtm;
 
-// TODO: реализовать!
+// TODO: implement!
 
 struct tm *localtime(const time_t *timer)
 {

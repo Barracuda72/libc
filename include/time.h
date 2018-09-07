@@ -1,9 +1,9 @@
 /*
  * time.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27
  *
- * Дата и время
+ * Date and time
  *
  */
 
@@ -11,15 +11,15 @@
 #define _TIME_H 1
 
 #include <decl/NULL.h>
-#define CLOCKS_PER_SEC 1000000 // Задано POSIX
+#define CLOCKS_PER_SEC 1000000 // Defined by POSIX
 #define TIME_UTC 1
 
-#include <decl/size_t.h> // Для size_t
+#include <decl/size_t.h> // For size_t
 
 /*
- * Типы для часов и времени
+ * Types for clocks and time
  */
-// TODO: должны быть вещественными!
+// TODO: should be floating-point!
 typedef unsigned long clock_t;
 typedef unsigned long time_t;
 
@@ -29,75 +29,75 @@ struct timespec {
 };
 
 struct tm {
-  int tm_sec;   // Секунды      [0, 60]
-  int tm_min;   // Минуты       [0, 59]
-  int tm_hour;  // Часы         [0, 23]
-  int tm_mday;  // День месяца  [1, 31]
-  int tm_mon;   // Месяц в году [0, 11]
-  int tm_year;  // Год, начиная от 1900 года  
-  int tm_wday;  // День недели  [0, 6], 0 - воскресенье
-  int tm_yday;  // День года    [0, 365]
-  int tm_isdst; // Флаг дневного времени
+  int tm_sec;   // Seconds       [0, 60]
+  int tm_min;   // Minutes       [0, 59]
+  int tm_hour;  // Hours         [0, 23]
+  int tm_mday;  // Day of month  [1, 31]
+  int tm_mon;   // Month of year [0, 11]
+  int tm_year;  // Year starting from 1900
+  int tm_wday;  // Day of week   [0, 6], 0 - Sunday
+  int tm_yday;  // Day of year   [0, 365]
+  int tm_isdst; // Daylight Saving Time flag
 };
 
 /*
- * Функции
+ * Time manipulating functions, 7.27.2
  */
 
 /*
- * Возвращает использованное процессорное время
+ * Returns processor time used, 7.27.2.1
  */
 clock_t clock(void);
 
 /*
- * Вычисляет разность между двумя календарными временами
+ * Computes the difference between two calendar times, 7.27.2.2
  */
-// TODO: реализовать!
+// TODO: implement!
 // double difftime(time_t time1, time_t time0);
 time_t difftime(time_t time1, time_t time0);
 
 /*
- * Преобразует время из разбитого на части представления в time_t
+ * Converts broken-down time into time_t, 7.27.2.3
  */
 time_t mktime(struct tm *timeptr);
 
 /*
- * Определяет текущее календарное время
+ * Determines current calendar time, 7.27.2.4
  */
 time_t time(time_t *timer);
 
 /*
- * Устанавливает значения структуры ts в соответствии с текущим календарным
- * временем
+ * Sets the ts structure fields based on current calendar time and base,
+ * 7.27.2.5
  */
 int timespec_get(struct timespec *ts, int base);
 
 /*
- * Преобразует значения структуры tm для составления текстового описания даты
- * и времени
+ * Time conversion functions, 7.27.3
+ */
+
+/*
+ * Builds text representation of time from fields of tm structure, 7.27.3.1
  */
 char *asctime(const struct tm *timeptr);
 
 /*
- * Преобразует значения сруктуры tm для составления текстового описания
- * локальных даты и времени
+ * Builds text representation of time from time_t, 7.27.3.2
  */
 char *ctime(const time_t *timer);
 
 /*
- * Преобразует календарное время, на которое указывает timer, в значения
- * структуры tm
+ * Fills tm structure fields (as UTC) from time_t, 7.27.3.3
  */
 struct tm *gmtime(const time_t *timer);
 
 /*
- * Преобразует локальное календарное время, на которое указывает timer, 
- * в значения структуры tm
+ * Fills tm structure fields (as localtime) from time_t, 7.27.3.4
  */
 struct tm *localtime(const time_t *timer);
 
 /*
- * Преобразует дату в соответствии с заданным форматом
+ * Builds string representation of date according to format, 7.27.3.5
  */
 size_t strftime(char * restrict s, size_t maxsize,
                 const char * restrict format,

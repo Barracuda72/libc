@@ -1,20 +1,19 @@
 /*
  * timespec_get.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.2.5
  *
- * Функция устанавливает значения структуры ts в соответствии с текущим
- * календарным временем
+ * Sets the ts structure fields based on current calendar time and base
  *
  */
 
 #include <time.h>
 
-// TODO: реализовать!
+// TODO: implement
 
 int timespec_get(struct timespec *ts, int base)
 {
-  // Постоянно находимся в 1.01.1970, 00:00
+  // We are always in 01.01.1970, 00:00
  
   ts->tv_sec = 0;
   ts->tv_nsec = 0;

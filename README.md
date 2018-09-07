@@ -35,7 +35,7 @@ encodings, atomics, etc.
 | 7.24 | string.h     | XXX% |           |
 | 7.25 | tgmath.h     |   0% |           |
 | 7.26 | threads.h    | 100% | Not supported |
-| 7.27 | time.h       | XXX% |           |
+| 7.27 | time.h       |  40% |           |
 | 7.28 | uchar.h      | XXX% |           |
 | 7.29 | wchar.h      | XXX% |           |
 | 7.30 | wctype.h     | XXX% |           |
@@ -83,6 +83,18 @@ encodings, atomics, etc.
 ### tgmath.h
 ### threads.h
 ### time.h
+|Paragraph|Function|Completion|Comments|
+|---------|--------|----------|--------|
+| 7.27.3.1 |asctime      | 100% |    |
+| 7.27.2.1 |clock        |   0% |    |
+| 7.27.3.2 |ctime        | 100% |    |
+| 7.27.2.2 |difftime     |   5% | hack  |
+| 7.27.3.3 |gmtime       | 100% |    |
+| 7.27.3.4 |localtime    |   5% | WIP   |
+| 7.27.2.3 |mktime       | 100% |    |
+| 7.27.3.5 |strftime     |   0% |    |
+| 7.27.2.4 |time         |   5% | WIP   |
+| 7.27.2.5 |timespec_get |   5% | WIP   |
 ### uchar.h
 ### wchar.h
 ### wctype.h

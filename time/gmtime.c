@@ -1,10 +1,9 @@
 /*
  * gmtime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.3.3
  *
- * Функция преобразует календарное время, на которое указывает timer, в
- * значения структуры tm
+ * Fills tm structure fields (as UTC) from time_t
  *
  */
 
@@ -22,12 +21,12 @@ struct tm *gmtime(const time_t *timer)
   localtm.tm_min  = res % 60; res /= 60;
   localtm.tm_hour = res % 24; res /= 24;
   
-  // В res - количество дней с 1.01.1970
+  // res holds the days since 01.01.1970
 
   for(i = 1970, j = 0; j <= res; i++)
     j = int_time_days_upto_year(i);
 
-  i--; // i - текущий год
+  i--; // i - current year
 
   j = int_time_days_upto_year(i);
 
@@ -36,7 +35,7 @@ struct tm *gmtime(const time_t *timer)
 
   for (j = 0; int_time_days_upto_month(j, i) <= localtm.tm_yday; j++);
 
-  j--; // j - текущий месяц
+  j--; // j - current month
 
   localtm.tm_mon = j;
   localtm.tm_mday = localtm.tm_yday - int_time_days_upto_month(j, i);

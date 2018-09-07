@@ -1,15 +1,15 @@
 /*
  * time.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.2.4
  *
- * Функция определяет текущее календарное время
+ * Determines current calendar time
  *
  */
 
 #include <time.h>
 
-// TODO: реализовать!
+// TODO: implement!
 
 time_t time(time_t *timer)
 {

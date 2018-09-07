@@ -1,9 +1,9 @@
 /*
  * mktime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.2.3
  *
- * Функция преобразует время из разбитого на части представления в time_t
+ * Converts broken-down time into time_t
  *
  */
 
@@ -24,7 +24,7 @@ time_t mktime(struct tm *timeptr)
       dum + duy
     )*24*60*60;
 
-  // 1.01.1970 - четверг
+  // 1.01.1970 - Thursday
   timeptr->tm_wday = (duy + dum + (timeptr->tm_mday - 1) + 4) % 7;
   timeptr->tm_yday = dum + timeptr->tm_mday - 1;
 

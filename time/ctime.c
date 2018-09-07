@@ -1,10 +1,9 @@
 /*
  * ctime.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.27.3.2
  *
- * Функция преобразует значения сруктуры tm для составления текстового
- * описания локальных даты и времени
+ * Builds text representation of time from time_t
  *
  */
 
