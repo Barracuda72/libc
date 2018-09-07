@@ -201,4 +201,4 @@ typedef   signed long intmax_t;
 #define INTMAX_C(c)  c ## L
 #define UINTMAX_C(c) c ## UL
 
-#endif// _STDINT_H
+#endif // _STDINT_H
