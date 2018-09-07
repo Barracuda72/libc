@@ -1,13 +1,15 @@
 /*
  * stdlib.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.22
+ *
+ * Standard utilities
  *
  */
 
-#ifndef _STDLIB_H
-#define _STDLIB_H 1
+# ifndef _STDLIB_H
+# define _STDLIB_H 1
 
-#error Not implemented
+# error Not implemented
 
-#endif // _STDLIB_H
+# endif // _STDLIB_H
