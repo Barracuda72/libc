@@ -1,16 +1,16 @@
 /*
  * setlocale.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.11.1.1
  *
- * Функция устанавливает новую локаль
+ * Changes locale settings
  *
  */
 
 #include <locale.h>
 #include <string.h>
 
-// TODO: реализована только минимальная функциональность!
+// TODO: only basic functionality!
 
 static const char *deflocale = "C";
 

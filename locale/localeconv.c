@@ -1,16 +1,16 @@
 /*
  * localeconv.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.11.2.1
  *
- * Функция возвращает описание текущей локали
+ * Returns lconv structure for current locale
  *
  */
 
 #include <limits.h>
 #include <locale.h>
 
-// TODO: реализована только минимальная функциональность!
+// TODO: only basic functionality!
 
 static struct lconv deflconv = {
   ".",

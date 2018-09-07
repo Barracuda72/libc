@@ -1,9 +1,9 @@
 /*
  * locale.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.11
  *
- * Локализация приложений
+ * Localization
  *
  */
 
@@ -11,8 +11,8 @@
 #define _LOCALE_H 1
 
 /*
- * Структура, содержащая информацию о форматировании дат, сумм и чисел в
- * рамках локали
+ * Structure that contains information about date and numeric formats in
+ * specific locale
  */
 struct lconv
 {
@@ -43,31 +43,31 @@ struct lconv
 };
 
 /*
- * Макросы
+ * Macroses
  */
-#include <decl/NULL.h> // Для NULL
+#include <decl/NULL.h> // For NULL
 
 /*
- * Параметры для setlocale
+ * setlocale parameters
  */
 #define LC_ALL      0
-#define LC_COLLATE  1 // Влияет на strcoll и strxfrm
-#define LC_CTYPE    2 // Влияет на функции работы с символами 
-#define LC_MONETARY 3 // Влияет на значение, возвращаемое localeconv
-#define LC_NUMERIC  4 // Влияет на форматирование чисел
-#define LC_TIME     5 // Влияет на strftime и wcsftime
+#define LC_COLLATE  1 // Affects strcoll and strxfrm
+#define LC_CTYPE    2 // Affects symbol manipulation functions
+#define LC_MONETARY 3 // Affects value returned by localeconv
+#define LC_NUMERIC  4 // Affects numerical formatting
+#define LC_TIME     5 // Affects strftime and wcsftime
 
 /*
- * Функции
+ * Functions
  */
 
 /*
- * Изменяет текущую локаль или ее часть
+ * Changes locale settings, 7.11.1.1
  */
 char *setlocale(int category, const char *locale);
 
 /*
- * Возвращает структуру lconv текущей локали
+ * Returns lconv structure for current locale, 7.11.2.1
  */
 struct lconv *localeconv(void);
 
