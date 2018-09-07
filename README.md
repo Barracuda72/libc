@@ -32,7 +32,7 @@ encodings, atomics, etc.
 | 7.21 | stdio.h      |   0% |           |
 | 7.22 | stdlib.h     |   0% |           |
 | 7.23 | stdnoreturn.h| 100% |           |
-| 7.24 | string.h     | XXX% |           |
+| 7.24 | string.h     |  64% |           |
 | 7.25 | tgmath.h     |   0% |           |
 | 7.26 | threads.h    | 100% | Not supported |
 | 7.27 | time.h       |  40% |           |
