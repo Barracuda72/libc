@@ -20,7 +20,7 @@ encodings, etc.
 | 7.9  | iso646.h     | 100% |           |
 | 7.10 | limits.h     | 100% |           |
 | 7.11 | locale.h     | 100% | Only C locale |
-| 7.12 | math.h       | XXX% |           |
+| 7.12 | math.h       | 0% |           |
 | 7.13 | setjmp.h     | XXX% |           |
 | 7.14 | signal.h     | XXX% |           |
 | 7.15 | stdalign.h   | XXX% |           |
