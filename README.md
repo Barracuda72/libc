@@ -4,7 +4,7 @@ Tries to be compatible with latest (C17) standart.
 # Restrictions
 Due to minimalistic design, library does not support most of optional features
 from standard. There is no complex numbers, threads, locales, multi-byte
-encodings, etc.
+encodings, atomics, etc.
 
 # Implementation status
 ## Generic status
@@ -25,7 +25,7 @@ encodings, etc.
 | 7.14 | signal.h     |   5% | WIP       |
 | 7.15 | stdalign.h   | 100% |           |
 | 7.16 | stdarg.h     |  10% | Only GCC supported |
-| 7.17 | stdatomic.h  | XXX% |           |
+| 7.17 | stdatomic.h  | 100% | Not supported |
 | 7.18 | stdbool.h    | XXX% |           |
 | 7.19 | stddef.h     | XXX% |           |
 | 7.20 | stdint.h     | XXX% |           |
