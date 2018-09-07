@@ -28,7 +28,7 @@ encodings, atomics, etc.
 | 7.17 | stdatomic.h  | 100% | Not supported |
 | 7.18 | stdbool.h    | 100% |           |
 | 7.19 | stddef.h     | 100% |           |
-| 7.20 | stdint.h     | XXX% |           |
+| 7.20 | stdint.h     | 100% |           |
 | 7.21 | stdio.h      | XXX% |           |
 | 7.22 | stdlib.h     | XXX% |           |
 | 7.23 | stdnoreturn.h| XXX% |           |
