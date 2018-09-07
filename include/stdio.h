@@ -1,7 +1,9 @@
 /*
  * stdio.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.21
+ *
+ * Input/output
  *
  */
 

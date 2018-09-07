@@ -29,7 +29,7 @@ encodings, atomics, etc.
 | 7.18 | stdbool.h    | 100% |           |
 | 7.19 | stddef.h     | 100% |           |
 | 7.20 | stdint.h     | 100% |           |
-| 7.21 | stdio.h      | XXX% |           |
+| 7.21 | stdio.h      |   0% |           |
 | 7.22 | stdlib.h     | XXX% |           |
 | 7.23 | stdnoreturn.h| 100% |           |
 | 7.24 | string.h     | XXX% |           |
