@@ -1,18 +1,18 @@
 /*
  * stdalign.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.15
  *
- * Макросы выравнивания
+ * Alignment macros
  *
  */
 
-#ifndef _STDALIGN_H
-#define _STDALIGN_H 1
+# ifndef _STDALIGN_H
+# define _STDALIGN_H 1
 
-#define alignas _Alignas
-#define alignof _Alignof
-#define __alignas_is_defined 1
-#define __alignof_is_defined 1
+# define alignas _Alignas
+# define alignof _Alignof
+# define __alignas_is_defined 1
+# define __alignof_is_defined 1
 
-#endif // _STDALIGN_H
+# endif // _STDALIGN_H
