@@ -37,7 +37,7 @@ encodings, atomics, etc.
 | 7.26 | threads.h    | 100% | Not supported |
 | 7.27 | time.h       |  40% |           |
 | 7.28 | uchar.h      |  10% |           |
-| 7.29 | wchar.h      | XXX% |           |
+| 7.29 | wchar.h      |   0% |           |
 | 7.30 | wctype.h     | XXX% |           |
 
 ## By headers
