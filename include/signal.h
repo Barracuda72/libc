@@ -1,9 +1,9 @@
 /*
  * signal.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.14
  *
- * Работа с сигналами
+ * Signal handling
  *
  */
 
@@ -14,13 +14,13 @@
 #error Not implemented
 #endif
 
-// НЕ РЕАЛИЗОВАНО
+// NOT IMPLEMENTED
 
-// TODO: ЗАМЕНИТЬ!
+// TODO: change to something sensible!
 typedef int sig_atomic_t;
 
 /*
- * Значения, допустимые для второго параметра функции signal
+ * Values accepted as second parameter to signal function
  */
 
 #define SIG_DFL 1
@@ -28,7 +28,7 @@ typedef int sig_atomic_t;
 #define SIG_IGN 3
 
 /*
- * Номера сигналов
+ * Signal numbers
  */
 #define SIGABRT 1
 #define SIGFPE  2
@@ -38,16 +38,16 @@ typedef int sig_atomic_t;
 #define SIGTERM 6
 
 /*
- * Функции
+ * Functions
  */
 
 /*
- * Устанавливает обработчик соответствующего сигнала
+ * Specifies signal handling details, 7.14.1.1
  */
 void (*signal(int sig, void (*func)(int)))(int);
 
 /*
- * Отправляет сигнал самому себе
+ * Send signal, 7.14.2.1
  */
 int raise(int sig);
 
