@@ -12,7 +12,7 @@ from standard. There is no complex numbers, threads, locales, etc.
 | 7.2  | assert.h     | XXX% |           |
 | 7.3  | complex.h    | XXX% |           |
 | 7.4  | ctype.h      | 100% |           |
-| 7.5  | errno.h      | XXX% |           |
+| 7.5  | errno.h      | 100% |           |
 | 7.6  | fenv.h       | XXX% |           |
 | 7.7  | float.h      | XXX% |           |
 | 7.8  | inttypes.h   | XXX% |           |

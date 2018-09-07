@@ -1,9 +1,9 @@
 /*
  * errno.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.5
  *
- * Макросы для отслеживания ошибок и сигнализации о них
+ * Macroses for error detection and reporting
  *
  */
 
@@ -14,7 +14,7 @@ int *__errno_location(void);
 #define errno (*__errno_location ())
 
 /*
- * Коды ошибок
+ * Error codes
  */
 
 #define EDOM    20
