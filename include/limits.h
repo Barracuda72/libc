@@ -1,9 +1,9 @@
 /*
  * limits.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.10 (5.2.4.2.1)
  *
- * Ограничения типов
+ * Sizes of integer types
  *
  */
 
@@ -11,99 +11,98 @@
 #define _LIMITS_H 1
 
 /*
- * Количество бит в самом маленьком объекте
+ * Number of bits in smallest non-bit object
  */
-#define CHAR_BIT 8
+# define CHAR_BIT 8
 
 /*
- * Минимальное значение объекта типа signed char
+ * Minimum value for object of type signed char
  */
-#define SCHAR_MIN (-128)
+# define SCHAR_MIN (-128)
 
 /*
- * Максимальное значение объекта типа signed char
+ * Maximum value for object of type signed char
  */
-#define SCHAR_MAX (+127)
+# define SCHAR_MAX (+127)
 
 /*
- * Максимальное значение объекта типа unsigned char
+ * Maximum value for object of type unsigned char
  */
-#define UCHAR_MAX 255
+# define UCHAR_MAX 255
 
 /*
- * Минимальное значение объекта типа char
+ * Minimum value for object of type char
  */
-#define CHAR_MIN SCHAR_MIN 
+# define CHAR_MIN SCHAR_MIN 
 
 /*
- * Максимальное значение объекта типа char
+ * Minimum value for object of type char
  */
-#define CHAR_MAX SCHAR_MAX 
+# define CHAR_MAX SCHAR_MAX 
 
 /*
- * Максимальное количество байт в символе многобайтной кодировки
+ * Maximum number of bytes in a multi-byte character
  */
-#define MB_LEN_MAX 1
+# define MB_LEN_MAX 1
 
 /*
- * Минимальное значение объекта типа short int
+ * Minimum value for object of type short int
  */
-#define SHRT_MIN (-32768)
+# define SHRT_MIN (-32768)
 
 /*
- * Максимальное значение объекта типа short int
+ * Maximum value for object of type short int
  */
-#define SHRT_MAX (+32767)
+# define SHRT_MAX (+32767)
 
 /*
- * Максимальное значение объекта типа unsigned short int
+ * Maximum value for object of type unsigned short int
  */
-#define USHRT_MAX 65535
+# define USHRT_MAX 65535
 
 /*
- * Минимальное значение объекта типа int
+ * Minimum value for object of type int
  */
-#define INT_MIN (-2147483648)
+# define INT_MIN (-2147483648)
 
 /*
- * Максимальное значение объекта типа int
+ * Maximum value for object of type int
  */
-#define INT_MAX (+2147483647)
+# define INT_MAX (+2147483647)
 
 /*
- * Максимальное значение объекта типа unsigned int
+ * Maximum value for object of type unsigned int
  */
-#define UINT_MAX 4294967295
+# define UINT_MAX 4294967295
 
 /*
- * Минимальное значение объекта типа long int
+ * Minimum value for object of type long int
  */
-#define LONG_MIN (-9223372036854775808)
+# define LONG_MIN (-9223372036854775808)
 
 /*
- * Максимальное значение объекта типа long int
+ * Maximum value for object of type long int
  */
-#define LONG_MAX (+9223372036854775807)
+# define LONG_MAX (+9223372036854775807)
 
 /*
- * Максимальное значение объекта типа unsigned long int
+ * Maximum value for object of type unsigned long int
  */
-#define ULONG_MAX 18446744073709551615
+# define ULONG_MAX 18446744073709551615
 
 /*
- * Минимальное значение объекта типа long long int
+ * Minimum value for object of type long long int
  */
-#define LLONG_MIN LONG_MIN
+# define LLONG_MIN LONG_MIN
 
 /*
- * Максимальное значение объекта типа long long int
+ * Maximum value for object of type long long int
  */
-#define LLONG_MAX LONG_MAX
+# define LLONG_MAX LONG_MAX
 
 /*
- * Максимальное значение объекта типа unsigned long long int
+ * Maximum value for object of type unsigned long long int
  */
-#define ULLONG_MAX ULONG_MAX
-
+# define ULLONG_MAX ULONG_MAX
 
 #endif // _LIMITS_H

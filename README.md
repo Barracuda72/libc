@@ -17,7 +17,7 @@ from standard. There is no complex numbers, threads, locales, etc.
 | 7.7  | float.h      |   0% |           |
 | 7.8  | inttypes.h   | 100% |           |
 | 7.9  | iso646.h     | 100% |           |
-| 7.10 | limits.h     | XXX% |           |
+| 7.10 | limits.h     | 100% |           |
 | 7.11 | locale.h     | XXX% |           |
 | 7.12 | math.h       | XXX% |           |
 | 7.13 | setjmp.h     | XXX% |           |
