@@ -1,9 +1,9 @@
 /*
  * imaxabs.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.8.2.1
  *
- * Функция вычисляет абсолютное значение параметра
+ * Computes an absolute value of parameter
  *
  */
 

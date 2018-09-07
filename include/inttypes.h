@@ -1,9 +1,9 @@
 /*
  * inttypes.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.8
  *
- * Преобразования целочисленных типов
+ * Integer types format conversion
  *
  */
 
@@ -11,14 +11,14 @@
 #define _INTTYPES_H 1
 
 #include <stdint.h>
-#include <stddef.h> // Для wchar_t
+#include <stddef.h> // For wchar_t
 
 /*
- * Макросы вывода для fprintf
+ * Macroses for fprintf format specifiers, 7.8.1
  */
 
 /*
- * Знаковые целые
+ * Signed indegers
  */
 # define PRId8		"d"
 # define PRId16		"d"
@@ -59,7 +59,7 @@
 # define PRIiPTR	"li"
 
 /*
- * Беззнаковые целые
+ * Unsigned integers
  */
 # define PRIo8		"o"
 # define PRIo16		"o"
@@ -132,11 +132,11 @@
 # define PRIXPTR	"lX"
 
 /*
- * Макросы ввода для fscanf
+ * Macroses for fscanf format specifiers
  */
 
 /*
- * Знаковые целые
+ * Signed integers
  */
 # define SCNd8		"hhd"
 # define SCNd16		"hd"
@@ -177,7 +177,7 @@
 # define SCNiPTR	"li"
 
 /*
- * Беззнаковые целые
+ * Unsigned integers
  */
 # define SCNo8		"hho"
 # define SCNo16		"ho"
@@ -232,6 +232,10 @@
 # define SCNuPTR	"lu"
 # define SCNxPTR	"lx"
 
+/*
+ * Type of value returned by imaxdiv function
+ */
+
 typedef struct
 {
   intmax_t quot;
@@ -239,39 +243,39 @@ typedef struct
 } imaxdiv_t;
 
 /*
- * Функции
+ * Functions for greatest-width integer types, 7.8.2
  */
 
 /*
- * Вычисляет абсолютное значение параметра
+ * Computes the absolute value of parameter, 7.8.2.1
  */
 intmax_t imaxabs(intmax_t j);
 
 /*
- * Выполняет целочисленное деление
+ * Performs an integer division, 7.8.2.2
  */
 imaxdiv_t imaxdiv(intmax_t numer, intmax_t denom);
 
 /*
- * Преобразование строки в число со знаком
+ * Converts string to maximum-width signed integer, 7.8.2.3
  */
 intmax_t strtoimax(const char * restrict nptr,
                    char ** restrict endptr, int base);
 
 /*
- * Преобразование строки в число без знака
+ * Converts string to maximum-width unsigned integer, 7.8.2.3 (also)
  */
 uintmax_t strtoumax(const char * restrict nptr,
                     char ** restrict endptr, int base);
 
 /*
- * Преобразование "широкой" строки в число со знаком
+ * Converts wide string to maximum-width signed integer, 7.8.2.4
  */
 intmax_t wcstoimax(const wchar_t * restrict nptr,
                    wchar_t ** restrict endptr, int base);
 
 /*
- * Преобразование "широкой" строки в число без знака
+ * Converts wide string to maximum-width unsigned integer, 7.8.2.4 (also)
  */
 uintmax_t wcstoumax(const wchar_t * restrict nptr,
                     wchar_t ** restrict endptr, int base);

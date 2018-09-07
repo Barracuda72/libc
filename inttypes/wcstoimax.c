@@ -1,13 +1,13 @@
 /*
  * wcstoimax.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.8.2.4
  *
- * Функция преобразует "широкую" строку в целое число со знаком
+ * Converts wide string to maximum-width signed integer
  *
  */
 
-#include <stddef.h> // Для wchar_t
+#include <stddef.h> // For wchar_t
 #include <stdint.h>
 #include <inttypes.h>
 

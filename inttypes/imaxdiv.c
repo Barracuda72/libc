@@ -1,9 +1,9 @@
 /*
  * imaxdiv.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.8.2.2
  *
- * Функция выполняет целочисленное деление
+ * Performs an integer division
  *
  */
 

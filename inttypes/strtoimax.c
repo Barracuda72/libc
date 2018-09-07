@@ -1,9 +1,9 @@
 /*
  * strtoimax.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.8.2.3
  *
- * Функция преобразует строку в целое число со знаком
+ * Converts string to maximum-width signed integer
  *
  */
 

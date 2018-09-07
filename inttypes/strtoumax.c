@@ -1,20 +1,20 @@
 /*
  * strtoumax.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.8.2.3
  *
- * Функция преобразует строку в целое число без знака
+ * Converts string to maximum-width unsigned integer
  *
  */
 
 #include <stdint.h>
 #include <inttypes.h>
 
-#include <errno.h> // Для errno
+#include <errno.h> // For errno
 
-#include <ctype.h> // Для isalnum
+#include <ctype.h> // For isalnum
 
-#include <locale.h> // Для NULL
+#include <locale.h> // For NULL
 
 uintmax_t strtoumax(const char * restrict nptr,
                    char ** restrict endptr, int base)
@@ -24,7 +24,7 @@ uintmax_t strtoumax(const char * restrict nptr,
   res = 0;
   while (isalnum(*nptr) && ((tolower(*nptr) - '0') < base))
   {
-    // Проверка переполнения
+    // Overflow check
     if (res > res*base)
     {
       errno = ERANGE;
