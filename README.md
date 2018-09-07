@@ -26,7 +26,7 @@ encodings, atomics, etc.
 | 7.15 | stdalign.h   | 100% |           |
 | 7.16 | stdarg.h     |  10% | Only GCC supported |
 | 7.17 | stdatomic.h  | 100% | Not supported |
-| 7.18 | stdbool.h    | XXX% |           |
+| 7.18 | stdbool.h    | 100% |           |
 | 7.19 | stddef.h     | XXX% |           |
 | 7.20 | stdint.h     | XXX% |           |
 | 7.21 | stdio.h      | XXX% |           |

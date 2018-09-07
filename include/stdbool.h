@@ -1,9 +1,9 @@
 /*
  * stdbool.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.18
  *
- * Логический тип и его значения
+ * Boolean type and values
  *
  */
 
