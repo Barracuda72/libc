@@ -1,15 +1,15 @@
 /*
  * complex.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.3
  *
- * Комплексные числа и работа с ними
+ * Complex arithmetic
  *
  */
 
-#ifndef _COMPLEX_H
-#define _COMPLEX_H 1
+# ifndef _COMPLEX_H
+# define _COMPLEX_H 1
 
-#error Not implemented
+# define __STDC_NO_COMPLEX__ 1
 
-#endif // _COMPLEX_H
+# endif // _COMPLEX_H

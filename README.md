@@ -11,7 +11,7 @@ encodings, atomics, etc.
 |Paragraph|Header|Completion|Comments|
 |---------|------|----------|--------|
 | 7.2  | assert.h     | 100% | Probably GCC-specific |
-| 7.3  | complex.h    | XXX% |           |
+| 7.3  | complex.h    | 100% | Not supported |
 | 7.4  | ctype.h      | 100% |           |
 | 7.5  | errno.h      | 100% |           |
 | 7.6  | fenv.h       |   0% |           |
