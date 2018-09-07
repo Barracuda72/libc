@@ -13,8 +13,8 @@ from standard. There is no complex numbers, threads, locales, etc.
 | 7.3  | complex.h    | XXX% |           |
 | 7.4  | ctype.h      | 100% |           |
 | 7.5  | errno.h      | 100% |           |
-| 7.6  | fenv.h       | XXX% |           |
-| 7.7  | float.h      | XXX% |           |
+| 7.6  | fenv.h       |   0% |           |
+| 7.7  | float.h      |   0% |           |
 | 7.8  | inttypes.h   | XXX% |           |
 | 7.9  | iso646.h     | XXX% |           |
 | 7.10 | limits.h     | XXX% |           |
