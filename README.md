@@ -36,7 +36,7 @@ encodings, atomics, etc.
 | 7.25 | tgmath.h     |   0% |           |
 | 7.26 | threads.h    | 100% | Not supported |
 | 7.27 | time.h       |  40% |           |
-| 7.28 | uchar.h      | XXX% |           |
+| 7.28 | uchar.h      |  10% |           |
 | 7.29 | wchar.h      | XXX% |           |
 | 7.30 | wctype.h     | XXX% |           |
 
@@ -96,5 +96,11 @@ encodings, atomics, etc.
 | 7.27.2.4 |time         |   5% | WIP   |
 | 7.27.2.5 |timespec_get |   5% | WIP   |
 ### uchar.h
+|Paragraph|Function|Completion|Comments|
+|---------|--------|----------|--------|
+| 7.28.1.1 | mbrtoc16| 50% | Not tested  |
+| 7.28.1.2 | c16rtomb| 0% |    |
+| 7.28.1.3 | mbrtoc32| 0% |    |
+| 7.28.1.4 | c32rtomb| 0% |    |
 ### wchar.h
 ### wctype.h

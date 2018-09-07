@@ -1,10 +1,10 @@
 /*
  * mbrtoc16.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.28.1.1
  *
- * Функция преобразует некоторый символ строки, возможно, задаваемый 
- * параметром ps, в 16-битный символ Unicode
+ * Converts some multibyte symbol, optionally specified by ps, into 16-bit
+ * Unicode symbol
  *
  */
 
