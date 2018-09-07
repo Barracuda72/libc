@@ -1,9 +1,9 @@
 /*
  * tgmath.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.25
  *
- * Функции типонезависимой математики
+ * Type-generic math
  *
  */
 

@@ -33,7 +33,7 @@ encodings, atomics, etc.
 | 7.22 | stdlib.h     | XXX% |           |
 | 7.23 | stdnoreturn.h| 100% |           |
 | 7.24 | string.h     | XXX% |           |
-| 7.25 | tgmath.h     | XXX% |           |
+| 7.25 | tgmath.h     |   0% |           |
 | 7.26 | threads.h    | XXX% |           |
 | 7.27 | time.h       | XXX% |           |
 | 7.28 | uchar.h      | XXX% |           |
