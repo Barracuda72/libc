@@ -38,7 +38,7 @@ encodings, atomics, etc.
 | 7.27 | time.h       |  40% |           |
 | 7.28 | uchar.h      |  10% |           |
 | 7.29 | wchar.h      |   0% |           |
-| 7.30 | wctype.h     | XXX% |           |
+| 7.30 | wctype.h     |   0% |           |
 
 ## By headers
 ### assert.h
