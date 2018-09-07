@@ -1,9 +1,9 @@
 /*
  * _setjmp.c
  *
- * A part of C17 standard
+ * Non-standard
  *
- * Функция сохраняет контекст для дальнейшего использования процедурой longjmp
+ * Saves calling procedure context for later restore by longjmp
  *
  */
 
@@ -12,7 +12,7 @@
  */
 .globl _setjmp
 _setjmp:
-  // Согласно x86-64 ABI, сохраняем регистры %rbp, %rbx, %rsp и %r12 - %r15
+  // According to x86-64 ABI, save registers %rbp, %rbx, %rsp and %r12 - %r15
   mov %r12,   (%rdi)
   mov %r13,  8(%rdi)
   mov %r14, 16(%rdi)

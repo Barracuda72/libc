@@ -1,9 +1,9 @@
 /*
  * setjmp.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.13
  *
- * Нелокальная передача управления
+ * Nonlocal jumps
  *
  */
 
@@ -11,9 +11,9 @@
 #define _SETJMP_H 1
 
 /*
- * Структура для сохранения контекста
+ * Structure for context saving
  *
- * Сохраняются 8 64-битных регистров
+ * TODO: Saving only 8 64-bit registers
  */
 
 struct _jmp_buf
@@ -22,27 +22,27 @@ struct _jmp_buf
 };
 
 /*
- * Тип структуры согласно стандарту
+ * Structure type as described by standard
  */
 typedef struct _jmp_buf jmp_buf[1];
 
 /*
- * Требуемый по стандарту макрос
+ * Saves the calling environment, 7.13.1.1
  */
 #define setjmp(x) _setjmp(x)
 
 /*
- * Функции
+ * Functions
  */
 
 /*
- * Сохраняет контекст вызывающей процедуры для последующего использования
- * процедурой longjmp
+ * Non-standard
+ * Saves calling procedure context for later restore by longjmp
  */
 int _setjmp(jmp_buf env);
 
 /*
- * Восстанавливает окружение, сохраненное предыдущим вызовом setjmp
+ * Restores environment saved by setjmp, 7.13.2.1
  */
 _Noreturn void longjmp(jmp_buf env, int val);
 

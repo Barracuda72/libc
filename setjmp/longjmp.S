@@ -1,9 +1,9 @@
 /*
  * longjmp.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.13.2.1
  *
- * Функция восстанавливает контекст, сохраненный процедурой setjmp
+ * Restores the environment saved by setjmp
  *
  */
 
