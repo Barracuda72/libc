@@ -1,24 +1,24 @@
 /*
  * assert.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.2
  *
- * Макросы отладки
+ * Diagnostics macroses
  *
  */
 
-#ifndef _ASSERT_H
-#define _ASSERT_H 1
+# ifndef _ASSERT_H
+# define _ASSERT_H 1
 
-#ifdef NDEBUG
+# ifdef NDEBUG
 
-#define assert(ignore) ((void)0)
+# define assert(ignore) ((void)0)
 
-#else
+# else
 
-#include <stdio.h>
+# include <stdio.h>
 
-#define assert(expression) \
+# define assert(expression) \
   do { \
     if ((expression) == 0) { \
       dprintf(stderr, "Assertion failed: '%s', in %s at %s:%d\n", \
@@ -27,8 +27,8 @@
     } \
   } while (0)
 
-#endif
+# endif
 
-#define static_assert(x) _Static_assert
+# define static_assert(x) _Static_assert
 
-#endif // _ASSERT_H
+# endif // _ASSERT_H
