@@ -1,15 +1,15 @@
 /*
  * threads.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.26
  *
- * Работа с потоками
+ * Threads
  *
  */
 
-#ifndef _THREADS_H
-#define _THREADS_H 1
+# ifndef _THREADS_H
+# define _THREADS_H 1
 
-#error Not implemented
+# define __STDC_NO_THREADS__ 1
 
-#endif // _THREADS_H
+# endif // _THREADS_H
