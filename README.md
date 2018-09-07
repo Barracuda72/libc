@@ -85,16 +85,16 @@ encodings, atomics, etc.
 ### time.h
 |Paragraph|Function|Completion|Comments|
 |---------|--------|----------|--------|
-| 7.27.3.1 |asctime      | 100% |    |
 | 7.27.2.1 |clock        |   0% |    |
-| 7.27.3.2 |ctime        | 100% |    |
 | 7.27.2.2 |difftime     |   5% | hack  |
-| 7.27.3.3 |gmtime       | 100% |    |
-| 7.27.3.4 |localtime    |   5% | WIP   |
 | 7.27.2.3 |mktime       | 100% |    |
-| 7.27.3.5 |strftime     |   0% |    |
 | 7.27.2.4 |time         |   5% | WIP   |
 | 7.27.2.5 |timespec_get |   5% | WIP   |
+| 7.27.3.1 |asctime      | 100% |    |
+| 7.27.3.2 |ctime        | 100% |    |
+| 7.27.3.3 |gmtime       | 100% |    |
+| 7.27.3.4 |localtime    |   5% | WIP   |
+| 7.27.3.5 |strftime     |   0% |    |
 ### uchar.h
 |Paragraph|Function|Completion|Comments|
 |---------|--------|----------|--------|
