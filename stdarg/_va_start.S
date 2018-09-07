@@ -1,9 +1,9 @@
 /*
  * _va_start.c
  *
- * A part of C17 standard
+ * Non-standard
  *
- * Функция инициализирует список аргументов переменной длинны
+ * Initializes variable-lenght list
  *
  */
 
@@ -13,14 +13,14 @@
 .globl _va_start
 _va_start:
   mov %rbp, %rax
-  mov $120, %rcx // Не уходим сильно в стек, у функций редко бывает много
-_va_start1:     // параметров
+  mov $120, %rcx // Don't go too deep into stack, functions
+_va_start1:     // usually don't have too many parameters
   sub $4, %rax
   cmp %rsi, (%rax)
-  je _va_start_found // Нашли аргумент
+  je _va_start_found // Found and argument
   loop _va_start1
 
-  xor %rax, %rax // Не нашли ничего
+  xor %rax, %rax // Found nothing
   jmp _va_start_ret
 
 _va_start_found:

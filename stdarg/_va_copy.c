@@ -1,9 +1,9 @@
 /*
  * _va_copy.c
  *
- * A part of C17 standard
+ * Non-standard
  *
- * Функция копирует список аргументов переменной длины
+ * Copies variable-lenght list
  *
  */
 
@@ -11,6 +11,6 @@
 
 void _va_copy(va_list *dest, va_list *src)
 {
-  // TODO: Это должно быть исправлено!!!!
+  // TODO: this should be fixed!
   //*dest = *src;
 }

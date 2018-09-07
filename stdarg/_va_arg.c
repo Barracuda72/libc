@@ -1,9 +1,9 @@
 /*
  * _va_arg.c
  *
- * A part of C17 standard
+ * Non-standard
  *
- * Функция возвращает следующий аргумент из списка аргументов переменной длины
+ * Returns next argument from variable-lenght list
  *
  */
 
@@ -12,7 +12,7 @@
 void *_va_arg(va_list *ap, int size)
 {
   void *ptr = (void *)*((long *)*ap);
-  // TODO: это должно быть исправлено!!!!
+  // TODO: this should be fixed!
   //(*ap) += 8;//size;
   return ptr;
 }

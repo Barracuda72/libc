@@ -24,7 +24,7 @@ encodings, etc.
 | 7.13 | setjmp.h     |  10% | WIP       |
 | 7.14 | signal.h     |   5% | WIP       |
 | 7.15 | stdalign.h   | 100% |           |
-| 7.16 | stdarg.h     | XXX% |           |
+| 7.16 | stdarg.h     |  10% | Only GCC supported |
 | 7.17 | stdatomic.h  | XXX% |           |
 | 7.18 | stdbool.h    | XXX% |           |
 | 7.19 | stddef.h     | XXX% |           |

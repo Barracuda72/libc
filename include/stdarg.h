@@ -1,9 +1,9 @@
 /*
  * stdarg.h
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.16
  *
- * Работа со списком неизвестных аргументов
+ * Variable arguments
  *
  */
 
@@ -12,7 +12,7 @@
 
 #if 1
 /*
- * Нижележащее специфично для GCC
+ * GCC specific
  */
 
 typedef __builtin_va_list va_list;
@@ -25,7 +25,7 @@ typedef __builtin_va_list va_list;
 #else
 
 /*
- * Реализация для общего случая
+ * Generic implementation
  */
 
 typedef void * va_list;
@@ -43,22 +43,26 @@ typedef void * va_list;
   _va_copy(&d,&s)
 
 /*
- * Инициализирует список параметров начальным значением
+ * Non-standard
+ * Initializes variable-lenght list 
  */
 void _va_start(va_list *ap, void *p, int size);
 
 /*
- * Возвращает следующий аргумент из списка аргументов переменной длины
+ * Non-standard
+ * Returns next argument from variable-lenght list
  */
 void *_va_arg(va_list *ap, int size);
 
 /*
- * Уничтожает список аргументов переменной длины
+ * Non-standard
+ * Destroys variable-lenght list
  */
 void _va_end(va_list *ap);
 
 /*
- * Копирует список аргументов переменной длины
+ * Non-standard
+ * Copies variable-lenght list
  */
 void _va_copy(va_list *ap, va_list *bp);
 

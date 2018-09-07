@@ -1,17 +1,17 @@
 /*
  * _va_end.c
  *
- * A part of C17 standard
+ * Non-standard
  *
- * Функция уничтожает список аргументов переменной длины
+ * Destroys variable-lenght list
  *
  */
 
 #include <stdarg.h>
-#include <decl/NULL.h> // Для NULL
+#include <decl/NULL.h> // For NULL
 
 void _va_end(va_list *ap)
 {
-  //TODO: это должно быть исправлено!!!!
+  //TODO: this should be fixed!
   //*ap = NULL;
 }
