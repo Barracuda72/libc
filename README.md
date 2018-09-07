@@ -3,7 +3,8 @@ Tries to be compatible with latest (C17) standart.
 
 # Restrictions
 Due to minimalistic design, library does not support most of optional features
-from standard. There is no complex numbers, threads, locales, etc.
+from standard. There is no complex numbers, threads, locales, multi-byte
+encodings, etc.
 
 # Implementation status
 ## Generic status
