@@ -1,9 +1,9 @@
 /*
  * strcpy.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.2.3
  *
- * Функция копирует содержимое строки s2 в строку s1
+ * Copies string s2 into s1
  *
  */
 

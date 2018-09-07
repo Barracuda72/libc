@@ -1,9 +1,9 @@
 /*
  * strncat.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.3.2
  *
- * Функция дописывает не более n символов строки s2 в конец строки s1
+ * Appends no more than n symbols from string s2 to the end of s1
  *
  */
 

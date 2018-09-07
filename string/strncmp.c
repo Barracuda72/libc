@@ -1,9 +1,9 @@
 /*
  * strncmp.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.4.4
  *
- * Функция сравнивает содержимое строк s1 и s2
+ * Compares contents of strings s1 and s2 up to n'th character
  *
  */
 

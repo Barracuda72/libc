@@ -1,10 +1,9 @@
 /*
  * strncpy.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.2.4
  *
- * Функция копирует содержимое строки s2 в строку s1, дополняя нулями,
- * если это необходимо
+ * Copies string s2 into s1 and pads with zeroes, if necessary
  *
  */
 

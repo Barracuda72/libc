@@ -1,9 +1,9 @@
 /*
  * strcat.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.3.1
  *
- * Функция дописывает строку s2 в конец строки s1
+ * Appends string s2 to the end of s1
  *
  */
 

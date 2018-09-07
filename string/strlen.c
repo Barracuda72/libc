@@ -1,9 +1,9 @@
 /*
  * strlen.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.6.3
  *
- * Функция возвращает длину строки
+ * Returns the string lenght
  *
  */
 

@@ -1,9 +1,9 @@
 /*
  * memset.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.6.1
  *
- * Функция заполняет область памяти указанным символом
+ * Fills memory area with specified symbol
  *
  */
 

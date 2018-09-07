@@ -1,9 +1,9 @@
 /*
  * memcmp.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.4.1
  *
- * Функция сравнивает содержимое областей памяти s1 и s2
+ * Compares contents of memory areas s1 and s2
  *
  */
 

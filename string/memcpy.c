@@ -1,9 +1,9 @@
 /*
  * memcpy.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.2.1
  *
- * Функция копирует содержимое области памяти s2 в область памяти s1
+ * Copies contents of memory area s2 into s1
  *
  */
 

@@ -80,6 +80,30 @@ encodings, atomics, etc.
 ### stdlib.h
 ### stdnoreturn.h
 ### string.h
+|Paragraph|Function|Completion|Comments|
+|---------|--------|----------|--------|
+| 7.24.2.1 |memcpy   | 100% |    |
+| 7.24.2.2 |memmove  | 100% |    |
+| 7.24.2.3 |strcpy   | 100% |    |
+| 7.24.2.4 |strncpy  | 100% |    |
+| 7.24.3.1 |strcat   | 100% |    |
+| 7.24.3.2 |strncat  | 100% |    |
+| 7.24.4.1 |memcmp   | 100% |    |
+| 7.24.4.2 |strcmp   | 100% |    |
+| 7.24.4.3 |strcoll  | 100% | Only C locale |
+| 7.24.4.4 |strncmp  | 100% |    |
+| 7.24.4.5 |strxfrm  | 100% | Only C locale |
+| 7.24.5.1 |memchr   | 0% |    |
+| 7.24.5.2 |strchr   | 0% |    |
+| 7.24.5.3 |strcspn  | 0% |    |
+| 7.24.5.4 |strpbrk  | 0% |    |
+| 7.24.5.5 |strrchr  | 0% |    |
+| 7.24.5.6 |strspn   | 0% |    |
+| 7.24.5.7 |strstr   | 0% |    |
+| 7.24.5.8 |strtok   | 0% |    |
+| 7.24.6.1 |memset   | 100% |    |
+| 7.24.6.2 |strerror | 100% |    |
+| 7.24.6.3 |strlen   | 100% |    |
 ### tgmath.h
 ### threads.h
 ### time.h

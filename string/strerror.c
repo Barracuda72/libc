@@ -1,9 +1,9 @@
 /*
  * strerror.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.6.2
  *
- * Функция возвращает строку-описание ошибки по ее коду
+ * Returns string description of error by it's code
  *
  */
 

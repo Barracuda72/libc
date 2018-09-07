@@ -1,10 +1,10 @@
 /*
  * memmove.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.2.2
  *
- * Функция копирует содержимое области памяти s2 в область памяти s1 
- * так, будто это происходит посредством третьего промежуточного буфера
+ * Copies contents of memory area s2 into s1 as if copying was performed with
+ * third intermediate buffer
  *
  */
 
@@ -18,8 +18,7 @@ void *memmove(void * dest, const void * src, size_t n)
   
   uint64_t i;
   
-  // Если начало d лежит внутри s, то нужно производить копирование 
-  // с конца
+  // If start of d is inside s, copying need to be done from the end
   if ((s+n > d) && (s < d))
   {
 	  for (i = n; i > 0; i--)

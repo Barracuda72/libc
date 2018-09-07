@@ -1,17 +1,16 @@
 /*
  * strcoll.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.4.3
  *
- * Функция сравнивает содержимое строк s1 и s2 с учетом настроек локали
+ * Compares contents of strings s1 and s2 with respect to locale settings
  *
  */
 
 #include <stdint.h>
 #include <string.h>
 
-// TODO: на текущий момент локали не поддерживаются; эта функция
-// по сути дублирует strcmp
+// TODO: locales a not supported (yes), so this is just another strcmp
 int strcoll(const char *s1, const char *s2)
 {
   while ((*s1 != 0) && (*s2 != 0) && (*s1++ == *s2++));

@@ -1,20 +1,19 @@
 /*
  * strxfrm.c
  *
- * A part of C17 standard
+ * A part of C17 standard, 7.24.4.5
  *
- * Функция преобразует строку s2 в s1 так, чтобы результат применения 
- * strcmp на двух модифицированных строках совпадал с результатом 
- * применения strcoll на немодифицированных
+ * Transforms string s2 into s1 so what result of strcmp on two modified
+ * strings will be equal to result of strcoll on original strings
  *
  */
 
 #include <stdint.h>
 #include <string.h>
 
-// TODO: поскольку поддержки локалей нет, strcmp и strcoll - одна и та 
-// же функция. Соответственно, никаких преобразований не требуется и
-// данная функция представляет собой просто вариант strncpy
+// TODO: because libc does not support locales (yet), strcmp and strcoll are
+// equal and no transformations required. Thus this function is just another
+// strncpy.
 size_t strxfrm(char * restrict s1, const char * restrict s2, size_t n)
 {
   uint64_t i,l;
