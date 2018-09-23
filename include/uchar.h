@@ -34,7 +34,7 @@ size_t mbrtoc16(char16_t * restrict pc16,
  * Converts some 16-bit Unicode symbol into multibyte symbol, 7.28.1.2
  */
 size_t c16rtomb(char * restrict s, char16_t c16,
-                mbstate_t * restrict ps)
+                mbstate_t * restrict ps);
 
 /*
  * Converts some multibyte symbol, optionally specified by ps, into 32-bit
