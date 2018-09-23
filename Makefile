@@ -75,13 +75,21 @@ PLATFORM= \
 INC=-I. -I./include
 IGN=-D__IGNORE_UNIMPLEMENTED_STDIO -D__IGNORE_UNIMPLEMENTED_STRING
 
-CPPFLAGS:=-m64 -nostdinc -fPIC ${INC} ${IGN}
-CFLAGS:=${CPPFLAGS} -g -ffreestanding -nostdlib -nodefaultlibs -Wall -Wextra -std=c11
-ASFLAGS:=${CPPFLAGS} -Wa,--64 -Wa,-g
+CPPFLAGS:=-m64 -nostdinc -fPIC $(INC) $(IGN)
+WARNINGS:=-Wall -Wextra -Wstrict-prototypes \
+    -Wmissing-prototypes -Wold-style-definition \
+    -Wno-missing-braces -Wno-missing-field-initializers -Wformat=2 \
+    -Wswitch-default -Wswitch-enum -Wcast-align -Wpointer-arith \
+    -Wbad-function-cast -Wstrict-overflow=5 -Winline \
+    -Wundef -Wnested-externs -Wcast-qual -Wshadow -Wunreachable-code \
+    -Wlogical-op -Wfloat-equal -Wstrict-aliasing=3 -Wredundant-decls \
+    -fno-omit-frame-pointer -ffloat-store -fno-common -fstrict-aliasing
+CFLAGS:=$(CPPFLAGS) -g -ffreestanding -nostdlib -nodefaultlibs -std=c18 -pedantic $(WARNINGS)
+ASFLAGS:=$(CPPFLAGS) -Wa,--64 -Wa,-g
 LDFLAGS:=-z max-page-size=0x1000 -m elf_x86_64
 
 PREFIX:=x86_64-pc-linux-gnu-
-VERSION:=-4.9.4
+VERSION:=-8.2.0
 CC:=$(PREFIX)gcc$(VERSION)
 LD:=$(PREFIX)ld
 RANLIB:=$(PREFIX)ranlib
