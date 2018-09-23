@@ -69,7 +69,9 @@ UCHAR= \
   uchar/mbrtoc16.o
 
 PLATFORM= \
-	linsys.o \
+	linsys.o
+
+CRT= \
 	crt0.o
 
 INC=-I. -I./include
@@ -104,7 +106,7 @@ static: libc.a
 
 dynamic: libc.so
 
-libc.a: $(OBJS)
+libc.a: $(OBJS) $(CRT)
 	$(AR) rcs $@ $^
 
 libc.so: $(OBJS)
