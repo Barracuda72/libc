@@ -11,9 +11,9 @@
 # define _STDDEF_H 1
 
 typedef signed   long  ptrdiff_t;
-# include <decl/size_t.h> //For size_t
+# include <decl/size_t.h> // For size_t
 typedef unsigned long  max_align_t;
-typedef unsigned short wchar_t;
+# include <decl/wchar_t.h> // For wchar_t
 
 # include <decl/NULL.h>
 
