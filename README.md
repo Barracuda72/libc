@@ -32,7 +32,7 @@ encodings, atomics, etc.
 | 7.21 | stdio.h      |   0% |           |
 | 7.22 | stdlib.h     |   0% |           |
 | 7.23 | stdnoreturn.h| 100% |           |
-| 7.24 | string.h     |  64% |           |
+| 7.24 | string.h     | 100% | Requires some testing |
 | 7.25 | tgmath.h     |   0% |           |
 | 7.26 | threads.h    | 100% | Not supported |
 | 7.27 | time.h       |  40% |           |
@@ -93,14 +93,14 @@ encodings, atomics, etc.
 | 7.24.4.3 |strcoll  | 100% | Only C locale |
 | 7.24.4.4 |strncmp  | 100% |    |
 | 7.24.4.5 |strxfrm  | 100% | Only C locale |
-| 7.24.5.1 |memchr   | 0% |    |
-| 7.24.5.2 |strchr   | 0% |    |
-| 7.24.5.3 |strcspn  | 0% |    |
-| 7.24.5.4 |strpbrk  | 0% |    |
-| 7.24.5.5 |strrchr  | 0% |    |
-| 7.24.5.6 |strspn   | 0% |    |
-| 7.24.5.7 |strstr   | 0% |    |
-| 7.24.5.8 |strtok   | 0% |    |
+| 7.24.5.1 |memchr   | 100% |    |
+| 7.24.5.2 |strchr   | 100% |    |
+| 7.24.5.3 |strcspn  | 100% |    |
+| 7.24.5.4 |strpbrk  | 100% |    |
+| 7.24.5.5 |strrchr  | 100% |    |
+| 7.24.5.6 |strspn   | 100% |    |
+| 7.24.5.7 |strstr   | 100% | Not tested |
+| 7.24.5.8 |strtok   | 100% | Not tested |
 | 7.24.6.1 |memset   | 100% |    |
 | 7.24.6.2 |strerror | 100% |    |
 | 7.24.6.3 |strlen   | 100% |    |

@@ -10,12 +10,6 @@
 # ifndef _STRING_H
 # define _STRING_H 1
 
-# ifndef __IGNORE_UNIMPLEMENTED_STRING
-
-# error Not implemented
-
-# endif // __IGNORE_UNIMPLEMENTED_STRING
-
 # include <decl/size_t.h>
 # include <decl/NULL.h>
 
@@ -94,7 +88,50 @@ size_t strxfrm(char * restrict s1, const char * restrict s2, size_t n);
  * Search functions, 7.24.5
  */
 
-// TODO: not implemented!
+/*
+ * Locates the first occurence of c in the initial n characters of the object s,
+ * 7.24.5.1
+ */
+void *memchr(const void *s, int c, size_t n);
+
+/*
+ * Locates the first occurence of c in the string s, 7.24.5.2
+ */
+char *strchr(const char *s, int c);
+
+/*
+ * Computes the length of the maximum initial segment of the string s1 which
+ * consists entirely of characters not from the string s2, 7.24.5.3
+ */
+size_t strcspn(const char *s1, const char *s2);
+
+/*
+ * Locates the first occurence in the string s1 of any character from the
+ * string s2, 7.24.5.4
+ */
+char *strpbrk(const char *s1, const char *s2);
+
+/*
+ * Locates the last occurence of c in the string s, 7.24.5.5
+ */
+char *strrchr(const char *s, int c);
+
+/*
+ * Computes the length of the maximum initial segment of the string s1 which
+ * consists entirely of characters from the string s2, 7.24.5.6
+ */
+size_t strspn(const char *s1, const char *s2);
+
+/*
+ * Locates the first occurence of string s2 in the string s1
+ */
+char *strstr(const char *s1, const char *s2);
+
+/*
+ * Breaks the string s1 into a sequence of tokens using characters of s2 as
+ * delimeters, 7.24.5.8
+ */
+char *strtok(char * restrict s1, const char * restrict s2);
 
 /*
  * Miscellaneous functions, 7.24.6
