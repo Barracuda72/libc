@@ -80,7 +80,7 @@ unsigned long long int strtoull(const char * restrict nptr,
 int rand(void);
 
 /*
- * Specify seed for a new sequence of a pseudo-random integers, 7.22.2.2
+ * Specifies seed for a new sequence of a pseudo-random integers, 7.22.2.2
  */
 // TODO: not implemented!
 void srand(unsigned int seed);
