@@ -78,6 +78,47 @@ encodings, atomics, etc.
 ### stdint.h
 ### stdio.h
 ### stdlib.h
+|Paragraph|Function|Completion|Comments|
+|---------|----------|----------|--------|
+| 7.22.1.1 |atof     |   0% |    |
+| 7.22.1.2 |atoi     |   0% |    |
+| 7.22.1.2 |atol     |   0% |    |
+| 7.22.1.2 |atoll    |   0% |    |
+| 7.22.1.3 |strtod   |   0% |    |
+| 7.22.1.3 |strtof   |   0% |    |
+| 7.22.1.3 |strtold  |   0% |    |
+| 7.22.1.4 |strtol   |   0% |    |
+| 7.22.1.4 |strtoll  |   0% |    |
+| 7.22.1.4 |strtoul  |   0% |    |
+| 7.22.1.4 |strtoull |   0% |    |
+| 7.22.2.1 |rand     |   0% |    |
+| 7.22.2.2 |srand    |   0% |    |
+| 7.22.3.1 |aligned_alloc   |   0% |    |
+| 7.22.3.2 |calloc    |   0% |    |
+| 7.22.3.3 |free      |   0% |    |
+| 7.22.3.4 |malloc    |   0% |    |
+| 7.22.3.5 |realloc   |   0% |    |
+| 7.22.4.1 |abort     |   0% |    |
+| 7.22.4.2 |atexit    |   0% |    |
+| 7.22.4.3 |at_quick_exit   |   0% |    |
+| 7.22.4.4 |exit      |   0% |    |
+| 7.22.4.5 |_Exit     |   0% |    |
+| 7.22.4.6 |getenv    |   0% |    |
+| 7.22.4.7 |quick_exit   |   0% |    |
+| 7.22.4.8 |system    |   0% |    |
+| 7.22.5.1 |bsearch   |   0% |    |
+| 7.22.5.2 |qsort     |   0% |    |
+| 7.22.6.1 |abs       |   0% |    |
+| 7.22.6.1 |labs      |   0% |    |
+| 7.22.6.1 |llabs     |   0% |    |
+| 7.22.6.2 |div       |   0% |    |
+| 7.22.6.2 |ldiv      |   0% |    |
+| 7.22.6.2 |lldiv     |   0% |    |
+| 7.22.7.1 |mblen     |   0% |    |
+| 7.22.7.2 |mbtowc    |   0% |    |
+| 7.22.7.3 |wctomb    |   0% |    |
+| 7.22.8.1 |mbstowcs  |   0% |    |
+| 7.22.8.2 |wcstombs  |   0% |    |
 ### stdnoreturn.h
 ### string.h
 |Paragraph|Function|Completion|Comments|

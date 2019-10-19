@@ -90,7 +90,7 @@ void srand(unsigned int seed);
  */
 
 /*
- * Allocates space for an object whosealignment is specified by the first
+ * Allocates space for an object whose alignment is specified by the first
  * argument, 7.22.3.1
  */
 // TODO: not implemented!
