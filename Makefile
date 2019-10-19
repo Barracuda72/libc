@@ -36,6 +36,10 @@ STDARG= \
 	stdarg/_va_end.o \
 	stdarg/_va_start.o
 
+STDLIB= \
+  stdlib/rand.o \
+  stdlib/srand.o
+
 STRING= \
   string/strncmp.o \
   string/strncpy.o \
@@ -75,7 +79,7 @@ CRT= \
 	crt0.o
 
 INC=-I. -I./include
-IGN=-D__IGNORE_UNIMPLEMENTED_STDIO -D__IGNORE_UNIMPLEMENTED_STRING
+IGN=-D__IGNORE_UNIMPLEMENTED_STDIO -D__IGNORE_UNIMPLEMENTED_STDLIB 
 
 CPPFLAGS:=-m64 -nostdinc -fPIC $(INC) $(IGN)
 WARNINGS:=-Wall -Wextra -Wstrict-prototypes \
@@ -91,14 +95,14 @@ ASFLAGS:=$(CPPFLAGS) -Wa,--64 -Wa,-g
 LDFLAGS:=-z max-page-size=0x1000 -m elf_x86_64
 
 PREFIX:=x86_64-pc-linux-gnu-
-VERSION:=-8.2.0
+VERSION:=-9.2.0
 CC:=$(PREFIX)gcc$(VERSION)
 LD:=$(PREFIX)ld
 RANLIB:=$(PREFIX)ranlib
 NM:=$(PREFIX)nm
 AR:=$(PREFIX)ar
 
-OBJS=$(CTYPE) $(INTTYPES) $(LOCALE) $(SETJMP) $(STDARG) $(STRING) $(TIME) $(UCHAR) $(PLATFORM)
+OBJS=$(CTYPE) $(INTTYPES) $(LOCALE) $(SETJMP) $(STDARG) $(STDLIB) $(STRING) $(TIME) $(UCHAR) $(PLATFORM)
 
 all: static dynamic
 
