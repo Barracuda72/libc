@@ -91,8 +91,8 @@ encodings, atomics, etc.
 | 7.22.1.4 |strtoll  |   0% |    |
 | 7.22.1.4 |strtoul  |   0% |    |
 | 7.22.1.4 |strtoull |   0% |    |
-| 7.22.2.1 |rand     |   0% |    |
-| 7.22.2.2 |srand    |   0% |    |
+| 7.22.2.1 |rand     | 100% |Not tested   |
+| 7.22.2.2 |srand    | 100% |Not tested   |
 | 7.22.3.1 |aligned_alloc   |   0% |    |
 | 7.22.3.2 |calloc    |   0% |    |
 | 7.22.3.3 |free      |   0% |    |

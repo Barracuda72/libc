@@ -76,13 +76,11 @@ unsigned long long int strtoull(const char * restrict nptr,
 /*
  * Computes a sequence of pseudo-random integers, 7.22.2.1
  */
-// TODO: not implemented!
 int rand(void);
 
 /*
  * Specifies seed for a new sequence of a pseudo-random integers, 7.22.2.2
  */
-// TODO: not implemented!
 void srand(unsigned int seed);
 
 /*
