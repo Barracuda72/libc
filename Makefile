@@ -37,6 +37,8 @@ STDARG= \
 	stdarg/_va_start.o
 
 STDLIB= \
+  stdlib/qsort.o \
+  stdlib/bsearch.o \
   stdlib/rand.o \
   stdlib/srand.o
 

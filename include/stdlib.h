@@ -180,7 +180,6 @@ int system(const char *string);
 /*
  * Searches the array for a matching element, 7.22.5.1
  */
-// TODO: not implemented!
 void * bsearch(const void *key, const void *base, 
                size_t nmemb, size_t size, 
                int (*compar)(const void *, const void *));
@@ -188,7 +187,6 @@ void * bsearch(const void *key, const void *base,
 /*
  * Sorts the array, 7.22.5.2
  */
-// TODO: not implemented!
 void qsort(void *base, size_t nmemb, size_t size,
            int (*compar)(const void *, const void *));
 
