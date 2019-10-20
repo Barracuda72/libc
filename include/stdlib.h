@@ -205,7 +205,6 @@ long long int llabs(long long int j);
 /*
  * Compute division and modulo in single operation, 7.22.6.2
  */
-// TODO: not implemented!
 div_t div(int numer, int denom);
 ldiv_t ldiv(long int numer, long int denom);
 lldiv_t lldiv(long long int numer, long long int denom);
