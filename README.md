@@ -105,7 +105,7 @@ encodings, atomics, etc.
 | 7.22.4.5 |_Exit     |   0% |    |
 | 7.22.4.6 |getenv    |   0% |    |
 | 7.22.4.7 |quick_exit   |   0% |    |
-| 7.22.4.8 |system    |   0% |    |
+| 7.22.4.8 |system    | 100% |Minimal no-op |
 | 7.22.5.1 |bsearch   | 100% |Not tested  |
 | 7.22.5.2 |qsort     | 100% |Not tested  |
 | 7.22.6.1 |abs       |   0% |    |

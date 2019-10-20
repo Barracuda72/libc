@@ -170,7 +170,6 @@ _Noreturn void quick_exit(int status);
 /* 
  * Finds the command processor and runs the command, 7.22.4.8
  */
-// TODO: not implemented!
 int system(const char *string);
 
 /*
