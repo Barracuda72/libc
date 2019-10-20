@@ -48,5 +48,15 @@ void * bsearch(const void *key, const void *base,
                size_t nmemb, size_t size,
                int (*compar)(const void *, const void *))
 {
-  return binary_search(key, base, nmemb, size, compar);
+  if (
+    ((key - base) % size != 0) ||
+    (key < base) ||  
+    (key >= (base + nmemb * size))
+  )
+    return NULL;
+
+  if (nmemb > 0)
+    return binary_search(key, base, nmemb, size, compar);
+
+  return NULL;
 }
