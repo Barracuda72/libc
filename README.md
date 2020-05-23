@@ -87,7 +87,7 @@ encodings, atomics, etc.
 | 7.21.5.2 |fflush    |   0% |    |
 | 7.21.5.3 |fopen     |   0% |    |
 | 7.21.5.4 |freopen   |   0% |    |
-| 7.21.5.5 |setbuf    |   0% |    |
+| 7.21.5.5 |setbuf    | 100% |Depends on setvbuf|
 | 7.21.5.6 |setvbuf   |   0% |    |
 | 7.21.6.1 |fprintf   |   0% |    |
 | 7.21.6.2 |fscanf    |   0% |    |

@@ -37,6 +37,7 @@ STDARG= \
 	stdarg/_va_start.o
 
 STDIO= \
+  stdio/setbuf.o \
   stdio/tmpnam.o \
   stdio/tmpfile.o
 

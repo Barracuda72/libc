@@ -66,13 +66,11 @@ int rename(const char* old_name, const char* new_name);
 /*
  * Creates a temporary binary file, 7.21.4.3
  */
-// TODO: Not implemented!
 FILE* tmpfile(void);
 
 /*
  * Generates temporary file name, 7.21.4.4
  */
-// TODO: Not implemented!
 char* tmpnam(char* s);
 
 /*
@@ -106,7 +104,6 @@ FILE* freopen(const char* restrict filename, const char* restrict mode, FILE* re
 /*
  * Set buffer for file operations, 7.21.5.5
  */
-// TODO: Not implemented!
 void setbuf(FILE* restrict stream, char* restrict buf);
 
 /*
