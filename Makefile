@@ -40,7 +40,11 @@ STDLIB= \
   stdlib/qsort.o \
   stdlib/bsearch.o \
   stdlib/rand.o \
-  stdlib/srand.o
+  stdlib/srand.o \
+  stdlib/div.o \
+  stdlib/ldiv.o \
+  stdlib/lldiv.o \
+  stdlib/system.o
 
 STRING= \
   string/strncmp.o \
@@ -97,7 +101,7 @@ ASFLAGS:=$(CPPFLAGS) -Wa,--64 -Wa,-g
 LDFLAGS:=-z max-page-size=0x1000 -m elf_x86_64
 
 PREFIX:=x86_64-pc-linux-gnu-
-VERSION:=-9.2.0
+VERSION:=-10.1.0
 CC:=$(PREFIX)gcc$(VERSION)
 LD:=$(PREFIX)ld
 RANLIB:=$(PREFIX)ranlib

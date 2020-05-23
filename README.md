@@ -30,7 +30,7 @@ encodings, atomics, etc.
 | 7.19 | stddef.h     | 100% |           |
 | 7.20 | stdint.h     | 100% |           |
 | 7.21 | stdio.h      |   0% |           |
-| 7.22 | stdlib.h     |   0% |           |
+| 7.22 | stdlib.h     |  20% |           |
 | 7.23 | stdnoreturn.h| 100% |           |
 | 7.24 | string.h     | 100% | Requires some testing |
 | 7.25 | tgmath.h     |   0% |           |
