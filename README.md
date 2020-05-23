@@ -77,6 +77,53 @@ encodings, atomics, etc.
 ### stddef.h
 ### stdint.h
 ### stdio.h
+|Paragraph|Function|Completion|Comments|
+|---------|----------|----------|--------|
+| 7.21.4.1 |remove    |   0% |    |
+| 7.21.4.2 |rename    |   0% |    |
+| 7.21.4.3 |tmpfile   |   0% |    |
+| 7.21.4.4 |tmpnam    |   0% |    |
+| 7.21.5.1 |fclose    |   0% |    |
+| 7.21.5.2 |fflush    |   0% |    |
+| 7.21.5.3 |fopen     |   0% |    |
+| 7.21.5.4 |freopen   |   0% |    |
+| 7.21.5.5 |setbuf    |   0% |    |
+| 7.21.5.6 |setvbuf   |   0% |    |
+| 7.21.6.1 |fprintf   |   0% |    |
+| 7.21.6.2 |fscanf    |   0% |    |
+| 7.21.6.3 |printf    |   0% |    |
+| 7.21.6.4 |scanf     |   0% |    |
+| 7.21.6.5 |snprintf  |   0% |    |
+| 7.21.6.6 |sprintf   |   0% |    |
+| 7.21.6.7 |sscanf    |   0% |    |
+| 7.21.6.8 |vfprintf  |   0% |    |
+| 7.21.6.9 |vfscanf   |   0% |    |
+| 7.21.6.10|vprintf   |   0% |    |
+| 7.21.6.11|vscanf    |   0% |    |
+| 7.21.6.12|vsnprintf |   0% |    |
+| 7.21.6.13|vsprintf  |   0% |    |
+| 7.21.6.14|vsscanf   |   0% |    |
+| 7.21.7.1 |fgetc     |   0% |    |
+| 7.21.7.2 |fgets     |   0% |    |
+| 7.21.7.3 |fputc     |   0% |    |
+| 7.21.7.4 |fputs     |   0% |    |
+| 7.21.7.5 |getc      |   0% |    |
+| 7.21.7.6 |getchar   |   0% |    |
+| 7.21.7.7 |putc      |   0% |    |
+| 7.21.7.8 |putchar   |   0% |    |
+| 7.21.7.9 |puts      |   0% |    |
+| 7.21.7.10|ungetc    |   0% |    |
+| 7.21.8.1 |fread     |   0% |    |
+| 7.21.8.2 |fwrite    |   0% |    |
+| 7.21.9.1 |fgetpos   |   0% |    |
+| 7.21.9.2 |fseek     |   0% |    |
+| 7.21.9.3 |fsetpos   |   0% |    |
+| 7.21.9.4 |ftell     |   0% |    |
+| 7.21.9.5 |rewind    |   0% |    |
+| 7.21.10.1|clearerr  |   0% |    |
+| 7.21.10.2|feof      |   0% |    |
+| 7.21.10.3|ferror    |   0% |    |
+| 7.21.10.4|perror    |   0% |    |
 ### stdlib.h
 |Paragraph|Function|Completion|Comments|
 |---------|----------|----------|--------|
