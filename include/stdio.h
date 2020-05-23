@@ -21,7 +21,7 @@
 # include <decl/fpos_t.h>
 # include <decl/NULL.h>
 
-# include <stdarg.h> /* For va_arg */
+# include <stdarg.h> /* For va_list */
 
 /* Buffering modes used by setvbuf */
 # define _IOFBF 0 /* Full-buffered mode */
