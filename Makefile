@@ -36,6 +36,10 @@ STDARG= \
 	stdarg/_va_end.o \
 	stdarg/_va_start.o
 
+STDIO= \
+  stdio/tmpnam.o \
+  stdio/tmpfile.o
+
 STDLIB= \
   stdlib/qsort.o \
   stdlib/bsearch.o \
@@ -108,7 +112,7 @@ RANLIB:=$(PREFIX)ranlib
 NM:=$(PREFIX)nm
 AR:=$(PREFIX)ar
 
-OBJS=$(CTYPE) $(INTTYPES) $(LOCALE) $(SETJMP) $(STDARG) $(STDLIB) $(STRING) $(TIME) $(UCHAR) $(PLATFORM)
+OBJS=$(CTYPE) $(INTTYPES) $(LOCALE) $(SETJMP) $(STDARG) $(STDIO) $(STDLIB) $(STRING) $(TIME) $(UCHAR) $(PLATFORM)
 
 all: static dynamic
 
