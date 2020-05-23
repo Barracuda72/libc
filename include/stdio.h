@@ -241,7 +241,7 @@ int getc(FILE* stream);
  * Reads the character from the stdin, 7.21.7.6
  */
 // TODO: Not implemented!
-int getchar();
+int getchar(void);
 
 /*
  * Writes the character to the stream, 7.21.7.7
