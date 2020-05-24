@@ -117,46 +117,39 @@ int setvbuf(FILE* restrict stream, char* restrict buf, int mode, size_t size);
  */
 
 /*
- * Writes formatted output to file, 7.21.6.1
+ * Writes formatted output to the file, 7.21.6.1
  */
-// TODO: Not implemented!
 int fprintf(FILE* restrict stream, const char* restrict format, ...);
 
 /*
- * Reads formatted input from file, 7.21.6.2
+ * Reads formatted input from the file, 7.21.6.2
  */
-// TODO: Not implemented!
 int fscanf(FILE* restrict stream, const char* restrict format, ...);
 
 /*
- * Writes formatted output to stdout, 7.21.6.3
+ * Writes formatted output to the stdout, 7.21.6.3
  */
-// TODO: Not implemented!
 int printf(const char* restrict format, ...);
 
 /*
- * Reads formatted input form stdin, 7.21.6.4
+ * Reads formatted input from the stdin, 7.21.6.4
  */
-// TODO: Not implemented!
 int scanf(const char* restrict format, ...);
 
 /*
- * Writes n-1 bytes of formatted output to buffer, 7.21.6.5
+ * Writes n-1 bytes of formatted output to the buffer, 7.21.6.5
  */
-// TODO: Not implemented!
 int snprintf(char* restrict s, size_t n, const char* restrict format, ...);
 
 /*
- * Writes formatted output to buffer, 7.21.6.6
+ * Writes formatted output to the buffer, 7.21.6.6
  */
-// TODO: Not implemented!
 int sprintf(char* restrict s, const char* restrict format, ...);
 
 /*
- * Reads formatted input from buffer, 7.21.6.7
+ * Reads formatted input from the buffer, 7.21.6.7
  */
-// TODO: Not implemented!
-int sscanf(char* restrict s, const char* restrict format, ...);
+int sscanf(const char* restrict s, const char* restrict format, ...);
 
 /*
  * Writes formatted output to the file with the variable argument list, 7.21.6.8
@@ -173,13 +166,11 @@ int vfscanf(FILE* restrict stream, const char* restrict format, va_list args);
 /*
  * Writes formatted output to the stdout with the variable argument list, 7.21.6.10
  */
-// TODO: Not implemented!
 int vprintf(const char* restrict format, va_list args);
 
 /*
  * Reads formatted input form the stdin with the variable argument list, 7.21.6.11
  */
-// TODO: Not implemented!
 int vscanf(const char* restrict format, va_list args);
 
 /*
@@ -198,7 +189,7 @@ int vsprintf(char* restrict s, const char* restrict format, va_list args);
  * Reads formatted input from the buffer with the variable argument list, 7.21.6.14
  */
 // TODO: Not implemented!
-int vsscanf(char* restrict s, const char* restrict format, va_list args);
+int vsscanf(const char* restrict s, const char* restrict format, va_list args);
 
 /*
  * Character input/output functions, 7.21.7

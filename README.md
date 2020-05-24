@@ -89,17 +89,17 @@ encodings, atomics, etc.
 | 7.21.5.4 |freopen   |   0% |    |
 | 7.21.5.5 |setbuf    | 100% |Depends on setvbuf|
 | 7.21.5.6 |setvbuf   |   0% |    |
-| 7.21.6.1 |fprintf   |   0% |    |
-| 7.21.6.2 |fscanf    |   0% |    |
-| 7.21.6.3 |printf    |   0% |    |
-| 7.21.6.4 |scanf     |   0% |    |
-| 7.21.6.5 |snprintf  |   0% |    |
-| 7.21.6.6 |sprintf   |   0% |    |
-| 7.21.6.7 |sscanf    |   0% |    |
+| 7.21.6.1 |fprintf   | 100% |Depends on vfprintf|
+| 7.21.6.2 |fscanf    | 100% |Depends on vfscanf|
+| 7.21.6.3 |printf    | 100% |Depends on vfprintf|
+| 7.21.6.4 |scanf     | 100% |Depends on vfscanf|
+| 7.21.6.5 |snprintf  | 100% |Depends on vsnprintf|
+| 7.21.6.6 |sprintf   |   0% |Depends on vsprintf|
+| 7.21.6.7 |sscanf    |   0% |Depends on vsscanf|
 | 7.21.6.8 |vfprintf  |   0% |    |
 | 7.21.6.9 |vfscanf   |   0% |    |
-| 7.21.6.10|vprintf   |   0% |    |
-| 7.21.6.11|vscanf    |   0% |    |
+| 7.21.6.10|vprintf   |   0% |Depends on vfprintf|
+| 7.21.6.11|vscanf    |   0% |Depends on vfscanf|
 | 7.21.6.12|vsnprintf |   0% |    |
 | 7.21.6.13|vsprintf  |   0% |    |
 | 7.21.6.14|vsscanf   |   0% |    |
