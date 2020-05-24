@@ -46,6 +46,8 @@ STDIO= \
   stdio/sscanf.o \
   stdio/vprintf.o \
   stdio/vscanf.o \
+  stdio/fgets.o \
+  stdio/fputs.o \
   stdio/setbuf.o \
   stdio/tmpnam.o \
   stdio/tmpfile.o
