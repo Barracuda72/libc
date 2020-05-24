@@ -204,7 +204,6 @@ int fgetc(FILE* stream);
 /*
  * Reads n-1 characters from the stream into the buffer, 7.21.7.2
  */
-// TODO: Not implemented!
 char* fgets(char* restrict s, int n, FILE* restrict stream);
 
 /*
@@ -216,37 +215,31 @@ int fputc(int c, FILE* stream);
 /*
  * Writes the string to the stream, 7.21.7.4
  */
-// TODO: Not implemented!
 int fputs(const char* restrict s, FILE* restrict stream);
 
 /*
  * Reads the character from the stream, 7.21.7.5
  */
-// TODO: Not implemented!
 int getc(FILE* stream);
 
 /*
  * Reads the character from the stdin, 7.21.7.6
  */
-// TODO: Not implemented!
 int getchar(void);
 
 /*
  * Writes the character to the stream, 7.21.7.7
  */
-// TODO: Not implemented!
 int putc(int c, FILE* stream);
 
 /*
  * Writes the character to the stdout, 7.21.7.8
  */
-// TODO: Not implemented!
 int putchar(int c);
 
 /*
  * Writes the string with newline to the stdout, 7.21.7.9
  */
-// TODO: Not implemented!
 int puts(const char* s);
 
 /*
@@ -262,13 +255,11 @@ int ungetc(int c, FILE* stream);
 /*
  * Reads into array nmemb elements of the specified size from the stream, 7.21.8.1
  */
-// TODO: Not implemented!
 size_t fread(void* restrict ptr, size_t size, size_t nmemb, FILE* restrict stream);
 
 /*
  * Writes nmemb elements of the specified size from the array into the stream, 7.21.8.2
  */
-// TODO: Not implemented!
 size_t fwrite(const void* restrict ptr, size_t size, size_t nmemb, FILE* restrict stream);
 
 /*

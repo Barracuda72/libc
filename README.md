@@ -94,27 +94,27 @@ encodings, atomics, etc.
 | 7.21.6.3 |printf    | 100% |Depends on vfprintf|
 | 7.21.6.4 |scanf     | 100% |Depends on vfscanf|
 | 7.21.6.5 |snprintf  | 100% |Depends on vsnprintf|
-| 7.21.6.6 |sprintf   |   0% |Depends on vsprintf|
-| 7.21.6.7 |sscanf    |   0% |Depends on vsscanf|
+| 7.21.6.6 |sprintf   | 100% |Depends on vsprintf|
+| 7.21.6.7 |sscanf    | 100% |Depends on vsscanf|
 | 7.21.6.8 |vfprintf  |   0% |    |
 | 7.21.6.9 |vfscanf   |   0% |    |
-| 7.21.6.10|vprintf   |   0% |Depends on vfprintf|
-| 7.21.6.11|vscanf    |   0% |Depends on vfscanf|
+| 7.21.6.10|vprintf   | 100% |Depends on vfprintf|
+| 7.21.6.11|vscanf    | 100% |Depends on vfscanf|
 | 7.21.6.12|vsnprintf |   0% |    |
 | 7.21.6.13|vsprintf  |   0% |    |
 | 7.21.6.14|vsscanf   |   0% |    |
 | 7.21.7.1 |fgetc     |   0% |    |
-| 7.21.7.2 |fgets     |   0% |    |
+| 7.21.7.2 |fgets     | 100% |Depends on fgetc|
 | 7.21.7.3 |fputc     |   0% |    |
-| 7.21.7.4 |fputs     |   0% |    |
-| 7.21.7.5 |getc      |   0% |    |
-| 7.21.7.6 |getchar   |   0% |    |
-| 7.21.7.7 |putc      |   0% |    |
-| 7.21.7.8 |putchar   |   0% |    |
-| 7.21.7.9 |puts      |   0% |    |
+| 7.21.7.4 |fputs     | 100% |Depends on fputc|
+| 7.21.7.5 |getc      | 100% |Depends on fgetc|
+| 7.21.7.6 |getchar   | 100% |Depends on fgetc|
+| 7.21.7.7 |putc      | 100% |Depends on fputc|
+| 7.21.7.8 |putchar   | 100% |Depends on fputc|
+| 7.21.7.9 |puts      | 100% |Depends on fputc|
 | 7.21.7.10|ungetc    |   0% |    |
-| 7.21.8.1 |fread     |   0% |    |
-| 7.21.8.2 |fwrite    |   0% |    |
+| 7.21.8.1 |fread     | 100% |Depends on fgetc|
+| 7.21.8.2 |fwrite    | 100% |Depends on fputc|
 | 7.21.9.1 |fgetpos   |   0% |    |
 | 7.21.9.2 |fseek     |   0% |    |
 | 7.21.9.3 |fsetpos   |   0% |    |

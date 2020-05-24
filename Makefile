@@ -48,6 +48,13 @@ STDIO= \
   stdio/vscanf.o \
   stdio/fgets.o \
   stdio/fputs.o \
+  stdio/getc.o \
+  stdio/getchar.o \
+  stdio/putc.o \
+  stdio/putchar.o \
+  stdio/puts.o \
+  stdio/fread.o \
+  stdio/fwrite.o \
   stdio/setbuf.o \
   stdio/tmpnam.o \
   stdio/tmpfile.o
