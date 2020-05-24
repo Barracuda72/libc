@@ -124,6 +124,8 @@ encodings, atomics, etc.
 | 7.21.10.2|feof      |   0% |    |
 | 7.21.10.3|ferror    |   0% |    |
 | 7.21.10.4|perror    | 100% |Depends on fputs & fputc|
+| Internal |int_xprintf| 5%  | WIP |
+| Internal |int_xscanf| 0%  |     |
 ### stdlib.h
 |Paragraph|Function|Completion|Comments|
 |---------|----------|----------|--------|
