@@ -291,9 +291,8 @@ int fsetpos(FILE* stream, const fpos_t* pos);
 long int ftell(FILE* stream);
 
 /*
- * Sets file position indicator to the beginning of the file, 7.21.9.5
+ * Sets file position indicator to the beginning of the file and clears error indicator, 7.21.9.5
  */
-// TODO: Not implemented!
 void rewind(FILE* stream);
 
 /*

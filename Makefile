@@ -55,6 +55,7 @@ STDIO= \
   stdio/puts.o \
   stdio/fread.o \
   stdio/fwrite.o \
+  stdio/rewind.o \
   stdio/setbuf.o \
   stdio/tmpnam.o \
   stdio/tmpfile.o
