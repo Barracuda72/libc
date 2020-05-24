@@ -123,7 +123,7 @@ encodings, atomics, etc.
 | 7.21.10.1|clearerr  |   0% |    |
 | 7.21.10.2|feof      |   0% |    |
 | 7.21.10.3|ferror    |   0% |    |
-| 7.21.10.4|perror    |   0% |    |
+| 7.21.10.4|perror    |   0% |Depends on fputs & fputc|
 ### stdlib.h
 |Paragraph|Function|Completion|Comments|
 |---------|----------|----------|--------|

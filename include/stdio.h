@@ -320,7 +320,6 @@ int ferror(FILE* stream);
 /*
  * Outputs message and error string, 7.21.10.4
  */
-// TODO: Not implemented!
 void perror(const char* s);
 
 # endif // _STDIO_H
