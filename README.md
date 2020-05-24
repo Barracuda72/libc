@@ -96,13 +96,13 @@ encodings, atomics, etc.
 | 7.21.6.5 |snprintf  | 100% |Depends on vsnprintf|
 | 7.21.6.6 |sprintf   | 100% |Depends on vsprintf|
 | 7.21.6.7 |sscanf    | 100% |Depends on vsscanf|
-| 7.21.6.8 |vfprintf  |   0% |    |
-| 7.21.6.9 |vfscanf   |   0% |    |
+| 7.21.6.8 |vfprintf  | 100% |Depends on int_xprintf|
+| 7.21.6.9 |vfscanf   | 100% |Depends on int_xscanf|
 | 7.21.6.10|vprintf   | 100% |Depends on vfprintf|
 | 7.21.6.11|vscanf    | 100% |Depends on vfscanf|
-| 7.21.6.12|vsnprintf |   0% |    |
-| 7.21.6.13|vsprintf  |   0% |    |
-| 7.21.6.14|vsscanf   |   0% |    |
+| 7.21.6.12|vsnprintf | 100% |Depends on int_xprintf|
+| 7.21.6.13|vsprintf  | 100% |Depends on int_xprintf|
+| 7.21.6.14|vsscanf   | 100% |Depends on int_xscanf|
 | 7.21.7.1 |fgetc     |   0% |    |
 | 7.21.7.2 |fgets     | 100% |Depends on fgetc|
 | 7.21.7.3 |fputc     |   0% |    |

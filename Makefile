@@ -46,8 +46,13 @@ STDIO= \
   stdio/snprintf.o \
   stdio/sprintf.o \
   stdio/sscanf.o \
+  stdio/vfprintf.o \
+  stdio/vfscanf.o \
   stdio/vprintf.o \
   stdio/vscanf.o \
+  stdio/vsnprintf.o \
+  stdio/vsprintf.o \
+  stdio/vsscanf.o \
   stdio/fgets.o \
   stdio/fputs.o \
   stdio/getc.o \

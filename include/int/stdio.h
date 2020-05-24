@@ -13,12 +13,14 @@
 # include <decl/FILE.h>
 # include <decl/size_t.h>
 # include <stdarg.h>
+# include <stdbool.h>
 
 struct int_stdio_desc
 {
   FILE* stream;
   size_t n;
   char* buffer;
+  bool limited;
 };
 
 /*
