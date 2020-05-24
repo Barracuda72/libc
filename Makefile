@@ -37,6 +37,8 @@ STDARG= \
 	stdarg/_va_start.o
 
 STDIO= \
+  stdio/int/xprintf.o \
+  stdio/int/xscanf.o \
   stdio/fprintf.o \
   stdio/fscanf.o \
   stdio/printf.o \
