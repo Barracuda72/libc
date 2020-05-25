@@ -297,19 +297,16 @@ void rewind(FILE* stream);
 /*
  * Clears end-of-file and error indicators, 7.21.10.1
  */
-// TODO: Not implemented!
 void clearerr(FILE* stream);
 
 /*
  * Tests the end-of-file indicator, 7.21.10.2
  */
-// TODO: Not implemented!
 int feof(FILE* stream);
 
 /*
  * Tests the error indicator, 7.21.10.3
  */
-// TODO: Not implemented!
 int ferror(FILE* stream);
 
 /*

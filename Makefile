@@ -63,6 +63,9 @@ STDIO= \
   stdio/fread.o \
   stdio/fwrite.o \
   stdio/rewind.o \
+  stdio/clearerr.o \
+  stdio/feof.o \
+  stdio/ferror.o \
   stdio/perror.o \
   stdio/setbuf.o \
   stdio/tmpnam.o \
