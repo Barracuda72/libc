@@ -109,7 +109,6 @@ void setbuf(FILE* restrict stream, char* restrict buf);
 /*
  * Set buffer and mode for file operations, 7.21.5.6
  */
-// TODO: Not implemented!
 int setvbuf(FILE* restrict stream, char* restrict buf, int mode, size_t size);
 
 /*

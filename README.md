@@ -88,7 +88,7 @@ encodings, atomics, etc.
 | 7.21.5.3 |fopen     |   0% |    |
 | 7.21.5.4 |freopen   |   0% |    |
 | 7.21.5.5 |setbuf    | 100% |Depends on setvbuf|
-| 7.21.5.6 |setvbuf   |   0% |    |
+| 7.21.5.6 |setvbuf   | 100% |Not tested|
 | 7.21.6.1 |fprintf   | 100% |Depends on vfprintf|
 | 7.21.6.2 |fscanf    | 100% |Depends on vfscanf|
 | 7.21.6.3 |printf    | 100% |Depends on vfprintf|
