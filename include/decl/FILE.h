@@ -10,6 +10,8 @@
 # ifndef _DECL_FILE_H
 # define _DECL_FILE_H 1
 
+# define UNGETC_STACK_SIZE 8
+
 struct _FILE
 {
   /* File position indicator */
@@ -37,6 +39,10 @@ struct _FILE
 
   /* Was input or output actually performed? */
   int io_performed;
+
+  /* Characters pushed by ungetc */
+  int ungetc_stack[UNGETC_STACK_SIZE];
+  int ungetc_count;
 
   /* Platform-specific data */
   # ifdef _LIBC_POSIX

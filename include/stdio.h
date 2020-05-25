@@ -237,7 +237,6 @@ int puts(const char* s);
 /*
  * Pushes the character back onto input stream, 7.21.7.10
  */
-// TODO: Not implemented!
 int ungetc(int c, FILE* stream);
 
 /*

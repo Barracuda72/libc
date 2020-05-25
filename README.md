@@ -112,7 +112,7 @@ encodings, atomics, etc.
 | 7.21.7.7 |putc      | 100% |Depends on fputc|
 | 7.21.7.8 |putchar   | 100% |Depends on fputc|
 | 7.21.7.9 |puts      | 100% |Depends on fputc|
-| 7.21.7.10|ungetc    |   0% |    |
+| 7.21.7.10|ungetc    | 100% |Not tested|
 | 7.21.8.1 |fread     | 100% |Depends on fgetc|
 | 7.21.8.2 |fwrite    | 100% |Depends on fputc|
 | 7.21.9.1 |fgetpos   |   0% |    |

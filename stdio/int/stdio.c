@@ -32,6 +32,7 @@ static FILE* int_stdio_object(void)
   stream->input_permitted = 0;
   stream->output_permitted = 0;
   stream->io_performed = 0;
+  stream->ungetc_count = 0;
 
   return stream;
 }

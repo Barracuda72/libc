@@ -67,6 +67,7 @@ STDIO= \
   stdio/putc.o \
   stdio/putchar.o \
   stdio/puts.o \
+  stdio/ungetc.o \
   stdio/fread.o \
   stdio/fwrite.o \
   stdio/ftell.o \
