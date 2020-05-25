@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <int/stdio.h>
 #include <int/posix.h>
 
 int fclose(FILE* stream)
@@ -27,6 +28,15 @@ int fclose(FILE* stream)
     free(stream->buffer);
 
   free(stream);
+
+  for (int i = 0; i < FOPEN_MAX; i++)
+  {
+    if (int_open_files[i] == stream)
+    {
+      int_open_files[i] = NULL;
+      break;
+    }
+  }
 
   if (ret < 0)
     return EOF;
