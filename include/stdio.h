@@ -80,7 +80,6 @@ char* tmpnam(char* s);
 /*
  * Flush stream and close the file, 7.21.5.1
  */
-// TODO: Not implemented!
 int fclose(FILE* stream);
 
 /*
