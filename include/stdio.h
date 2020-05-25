@@ -86,7 +86,6 @@ int fclose(FILE* stream);
 /*
  * Flush unwritten data into the stream, 7.21.5.2
  */
-// TODO: Not implemented!
 int fflush(FILE* stream);
 
 /*

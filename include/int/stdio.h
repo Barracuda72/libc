@@ -33,4 +33,19 @@ int int_xprintf(struct int_stdio_desc* stream, const char* restrict format, va_l
  */
 int int_xscanf(struct int_stdio_desc* stream, const char* restrict format, va_list args);
 
+/*
+ * stdio initialization function
+ */
+void stdio_init(void);
+
+/*
+ * stdio finalization function
+ */
+void stdio_fini(void);
+
+/*
+ * Array of all open files, size FOPEN_MAX
+ */
+extern FILE* int_open_files[];
+
 #endif // _INT_STDIO_H

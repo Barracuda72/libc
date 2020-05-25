@@ -84,7 +84,7 @@ encodings, atomics, etc.
 | 7.21.4.3 |tmpfile   | 100% |Depends on fopen & remove|
 | 7.21.4.4 |tmpnam    | 100% |Basic|
 | 7.21.5.1 |fclose    |   0% |    |
-| 7.21.5.2 |fflush    |   0% |    |
+| 7.21.5.2 |fflush    | 100% |Posix-only|
 | 7.21.5.3 |fopen     |   0% |    |
 | 7.21.5.4 |freopen   |   0% |    |
 | 7.21.5.5 |setbuf    | 100% |Depends on setvbuf|

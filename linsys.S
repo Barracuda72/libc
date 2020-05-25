@@ -7,10 +7,13 @@
 
 #include "/usr/include/asm/unistd_64.h"
 
-// Generic syscall definition macro
+// Generic syscall definition macros
+#define SYSCALL_DEF(name) \
+  .globl sys_##name; \
+  sys_##name: ;
+
 #define SYSCALL(name, num) \
-  .globl #name; \
-  ##name: ; \
+  SYSCALL_DEF(name) \
   mov $##num, %rax; \
   syscall; \
   ret
@@ -48,16 +51,14 @@ SYSCALL(getpid, __NR_getpid)
 
 // void *mremap(void *old_address, size_t old_size,
 //                    size_t new_size, int flags, void *new_address)
-.globl mremap
-mremap:
+SYSCALL_DEF(mremap)
   mov $__NR_mremap, %rax
   mov %rcx, %r10
   syscall
   ret
 
 // void *sbrk(int len)
-.globl sbrk
-sbrk:
+SYSCALL_DEF(sbrk)
   push %rdi
   xor %rdi, %rdi
   mov $__NR_brk, %rax

@@ -7,24 +7,44 @@
  *
  */
 
-#ifndef _DECL_FILE_H
-#define _DECL_FILE_H 1
+# ifndef _DECL_FILE_H
+# define _DECL_FILE_H 1
 
 struct _FILE
 {
   /* File position indicator */
   long int position_indicator;
-  /* Pointer to associated buffer */
+
+  /* Buffering mode */
+  int buffering_mode;
+  /* Pointer to the associated buffer */
   char* buffer;
+  /* Size of buffer */
+  size_t buffer_size;
+  /* Position inside the buffer */
+  size_t buffer_position;
+  /* Was that buffer allocated by libc or provided by user? */
+  int buffer_needs_free;
+
   /* Error indicator */
   int error_indicator;
   /* EOF indicator */
   int eof_indicator;
 
-  /* Buffering mode */
-  int buffering_mode;
+  /* Is this stream capable of input, output or both? */
+  int input_permitted;
+  int output_permitted;
+
+  /* Was input or output actually performed? */
+  int io_performed;
+
+  /* Platform-specific data */
+  # ifdef _LIBC_POSIX
+  /* File descriptor */
+  int fd;
+  # endif
 };
 
 typedef struct _FILE FILE;
 
-#endif // _DECL_FILE_H
+# endif // _DECL_FILE_H

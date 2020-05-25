@@ -28,8 +28,6 @@ int setvbuf(FILE* restrict stream, char* restrict buf, int mode, size_t size)
 
   stream->buffer_position = 0;
 
-  stream->buffer_dirty = 0;
-
   if (mode != _IONBF)
   {
     if (buf != NULL)

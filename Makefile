@@ -37,10 +37,12 @@ STDARG= \
 	stdarg/_va_start.o
 
 STDIO= \
+  stdio/int/stdio.o \
   stdio/int/xprintf.o \
   stdio/int/xscanf.o \
   stdio/tmpfile.o\
   stdio/tmpnam.o \
+  stdio/fflush.o \
   stdio/setbuf.o \
   stdio/setvbuf.o \
   stdio/fprintf.o \
@@ -124,7 +126,8 @@ CRT= \
 INC=-I. -I./include
 IGN=-D__IGNORE_UNIMPLEMENTED_STDIO -D__IGNORE_UNIMPLEMENTED_STDLIB 
 
-CPPFLAGS:=-m64 -nostdinc -fPIC $(INC) $(IGN)
+TARGET:=-D_LIBC_POSIX
+CPPFLAGS:=-m64 -nostdinc -fPIC $(INC) $(IGN) $(TARGET)
 WARNINGS:=-Wall -Wextra -Wstrict-prototypes \
     -Wmissing-prototypes -Wold-style-definition \
     -Wno-missing-braces -Wno-missing-field-initializers -Wformat=2 \
