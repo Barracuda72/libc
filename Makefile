@@ -42,6 +42,7 @@ STDIO= \
   stdio/int/xscanf.o \
   stdio/tmpfile.o\
   stdio/tmpnam.o \
+  stdio/fclose.o \
   stdio/fflush.o \
   stdio/setbuf.o \
   stdio/setvbuf.o \
