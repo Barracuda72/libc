@@ -282,7 +282,6 @@ int fsetpos(FILE* stream, const fpos_t* pos);
 /*
  * Retrieves the file position indicator, 7.21.9.4
  */
-// TODO: Not implemented!
 long int ftell(FILE* stream);
 
 /*

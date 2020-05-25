@@ -118,7 +118,7 @@ encodings, atomics, etc.
 | 7.21.9.1 |fgetpos   |   0% |    |
 | 7.21.9.2 |fseek     |   0% |    |
 | 7.21.9.3 |fsetpos   |   0% |    |
-| 7.21.9.4 |ftell     |   0% |    |
+| 7.21.9.4 |ftell     | 100% |    |
 | 7.21.9.5 |rewind    | 100% |Depends on fseek & clearerr|
 | 7.21.10.1|clearerr  | 100% |    |
 | 7.21.10.2|feof      | 100% |    |

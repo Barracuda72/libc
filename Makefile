@@ -62,6 +62,7 @@ STDIO= \
   stdio/puts.o \
   stdio/fread.o \
   stdio/fwrite.o \
+  stdio/ftell.o \
   stdio/rewind.o \
   stdio/clearerr.o \
   stdio/feof.o \
