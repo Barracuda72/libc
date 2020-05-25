@@ -39,6 +39,10 @@ STDARG= \
 STDIO= \
   stdio/int/xprintf.o \
   stdio/int/xscanf.o \
+  stdio/tmpfile.o\
+  stdio/tmpnam.o \
+  stdio/setbuf.o \
+  stdio/setvbuf.o \
   stdio/fprintf.o \
   stdio/fscanf.o \
   stdio/printf.o \
@@ -67,10 +71,7 @@ STDIO= \
   stdio/clearerr.o \
   stdio/feof.o \
   stdio/ferror.o \
-  stdio/perror.o \
-  stdio/setbuf.o \
-  stdio/tmpnam.o \
-  stdio/tmpfile.o
+  stdio/perror.o
 
 STDLIB= \
   stdlib/qsort.o \
